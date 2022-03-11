@@ -395,6 +395,11 @@ ecoissac:
     name: Eric Coissac
     joined: 2022-02
 
+elichad:
+    name: Eli Chadwick
+    joined: 2022-03
+    orcid: 0000-0002-0035-6475
+
 erxleben:
     name: Anika Erxleben
     email: anikaerxleben@gmail.com
@@ -730,6 +735,10 @@ lamouresparus:
     email: loveotudor@gmail.com
     twitter: lamouresparus
     joined: 2021-10
+
+leandro-liborio:
+    name: Leandro Liborio
+    joined: 2022-03
 
 lecorguille:
     name: Gildas Le Corguillé

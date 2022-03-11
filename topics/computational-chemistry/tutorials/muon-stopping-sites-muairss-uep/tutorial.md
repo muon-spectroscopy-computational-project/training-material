@@ -2,24 +2,24 @@
 layout: tutorial_hands_on
 
 title: Finding muon stopping sites using the AIRSS and UEP methods
+level: Introductory
 zenodo_link: https://sandbox.zenodo.org/record/1031546
 questions:
-- Which biological questions are addressed by the tutorial?
-- Which bioinformatics techniques are important to know for this type of data?
+- "What are stopping sites and why is finding them important?"
+- "What computational techniques can be used to find stopping sites?"
+- "What materials can I apply these techniques to?"
+- "How can Galaxy help me with my analysis?"
 objectives:
-- The learning objectives are the goals of the tutorial
-- They will be informed by your audience and will communicate to them and to yourself
-  what you should focus on during the course
-- They are single sentences describing what a learner should be able to do once they
-  have completed the tutorial
-- You can use Bloom's Taxonomy to write effective learning objectives
+- "Understand why finding stopping sites is useful"
+- "Apply the AIRSS and UEP methods together to find stopping sites"
+- "Understand the limitations of these tools and techniques"
 time_estimation: 3H
 key_points:
 - The take-home messages
 - They will appear at the end of the tutorial
 contributors:
-- Eli Chadwick
-- Leandro Liborio
+- elichad
+- leandro-liborio
 
 ---
 
