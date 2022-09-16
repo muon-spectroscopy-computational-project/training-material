@@ -1,0 +1,15 @@
+---
+name: muon-science
+type: use
+title: Muon Science
+summary: Modelling, simulation and analysis of muon experiments
+docker_image: ''
+
+requirements:
+- type: internal
+  topic_name: introduction
+
+maintainers:
+  - anish-mudaraddi
+  - elichad
+
