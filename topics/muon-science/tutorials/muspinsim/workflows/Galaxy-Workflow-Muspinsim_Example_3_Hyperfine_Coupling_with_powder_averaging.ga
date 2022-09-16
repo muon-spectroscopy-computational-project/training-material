@@ -1,0 +1,161 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "Muspinsim Example 3 - Hyperfine Coupling (with powder averaging)",
+    "steps": {
+        "0": {
+            "annotation": "Build input file for Hyperfine Coupling (with powder averaging) Example",
+            "content_id": "muspinsim_config",
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [],
+            "label": "Hyperfine (with powder averages) Configure",
+            "name": "MuSpinSim Configure",
+            "outputs": [
+                {
+                    "name": "out_file",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 524.0500030517578,
+                "height": 102.05000305175781,
+                "left": 432,
+                "right": 632,
+                "top": 422,
+                "width": 200,
+                "x": 432,
+                "y": 422
+            },
+            "post_job_actions": {
+                "HideDatasetActionout_file": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_file"
+                }
+            },
+            "tool_id": "muspinsim_config",
+            "tool_state": "{\"experiment_params\": {\"experiment\": {\"experiment_preset\": \"custom\", \"__current_case__\": 2, \"x_axis\": \"time\", \"y_axis\": \"asymmetry\", \"fields\": [{\"__index__\": 0, \"field\": \"0.01\"}], \"polarizations\": []}, \"average_axes\": [\"orientation\"], \"orientations\": [{\"__index__\": 0, \"orientation_options\": {\"orientation_preset\": \"eulrange\", \"__current_case__\": 0, \"eul_n\": \"10\"}}], \"euler_convention\": \"zyz\", \"times\": [{\"__index__\": 0, \"time\": \"range(0, 1.0)\"}], \"temperatures\": []}, \"fitting_params\": {\"fitting_options\": {\"fitting\": \"\", \"__current_case__\": 1}}, \"interaction_params\": {\"interactions\": [{\"__index__\": 0, \"interaction_options\": {\"interaction\": \"hyperfine\", \"__current_case__\": 1, \"hfine_index\": \"1\", \"hfine_e_index\": \"2\", \"hfine_matrix\": \"5 2 3\\n2 5 2\\n3 2 5\"}}]}, \"out_file_prefix\": \"hfine_powder\", \"spins\": {\"spins\": [{\"__index__\": 0, \"spin_options\": {\"spin_preset\": \"mu\", \"__current_case__\": 1}}, {\"__index__\": 1, \"spin_options\": {\"spin_preset\": \"e\", \"__current_case__\": 2}}]}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.0+galaxy0",
+            "type": "tool",
+            "uuid": "09a7d155-1d32-4d9f-a01b-5221f2ad969a",
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "Run Simulation",
+            "content_id": "muspinsim",
+            "errors": null,
+            "id": 1,
+            "input_connections": {
+                "mu_sim": {
+                    "id": 0,
+                    "output_name": "out_file"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MuSpinSim Simulate",
+                    "name": "mu_exp_in"
+                }
+            ],
+            "label": null,
+            "name": "MuSpinSim Simulate",
+            "outputs": [
+                {
+                    "name": "muspinsim_results",
+                    "type": "input"
+                },
+                {
+                    "name": "log_out",
+                    "type": "txt"
+                },
+                {
+                    "name": "fit_report",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 707.7666625976562,
+                "height": 265.26666259765625,
+                "left": 689,
+                "right": 889,
+                "top": 442.5,
+                "width": 200,
+                "x": 689,
+                "y": 442.5
+            },
+            "post_job_actions": {},
+            "tool_id": "muspinsim",
+            "tool_state": "{\"mu_exp_in\": {\"__class__\": \"RuntimeValue\"}, \"mu_sim\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.0+galaxy1",
+            "type": "tool",
+            "uuid": "a19aa1fc-a6eb-4070-8d57-e65845ebe6e2",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "log_out",
+                    "uuid": "88fc47d4-5371-4923-b447-2bebb0d6e24a"
+                },
+                {
+                    "label": null,
+                    "output_name": "fit_report",
+                    "uuid": "8a595dee-76ed-4819-9058-8cddf610599a"
+                },
+                {
+                    "label": null,
+                    "output_name": "muspinsim_results",
+                    "uuid": "83c28e7b-ed18-4a74-9b47-dbd1d06441c9"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "Plot Output (PNG file)",
+            "content_id": "muspinsim_plot",
+            "errors": null,
+            "id": 2,
+            "input_connections": {
+                "mu_out_series_0|mu_data": {
+                    "id": 1,
+                    "output_name": "muspinsim_results"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "MuSpinSim Plot",
+            "outputs": [
+                {
+                    "name": "out_file_png",
+                    "type": "png"
+                }
+            ],
+            "position": {
+                "bottom": 723.2666625976562,
+                "height": 133.26666259765625,
+                "left": 959,
+                "right": 1159,
+                "top": 590,
+                "width": 200,
+                "x": 959,
+                "y": 590
+            },
+            "post_job_actions": {},
+            "tool_id": "muspinsim_plot",
+            "tool_state": "{\"mu_out_series\": [{\"__index__\": 0, \"mu_data\": {\"__class__\": \"ConnectedValue\"}, \"mu_label\": \"\", \"colour\": \"k\", \"series_type\": {\"type\": \"line\", \"__current_case__\": 0, \"linestyle\": \"solid\", \"linewidth\": \"1.0\"}}], \"out_file_type\": \"png\", \"title\": \"Hyperfine (with powder averaging) Example\", \"xlab\": \"t\", \"ylab\": \"Asymmetry\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.5.1+galaxy0",
+            "type": "tool",
+            "uuid": "fc3cb858-bfc2-4bc7-9b0c-4dab6b21967c",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_file_png",
+                    "uuid": "520f1727-b595-4ec9-844d-a04c4e403ca2"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "37df971b-cb17-4cbb-aa95-0160f6b745c0",
+    "version": 2
+}

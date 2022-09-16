@@ -1,0 +1,198 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "Example to show effect of dissipation constant. Compare effect against theory",
+    "format-version": "0.1",
+    "name": "Muspinsim Example 6 - Dissipation",
+    "steps": {
+        "0": {
+            "annotation": "Build input file for Dissipation Example",
+            "content_id": "muspinsim_config",
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [],
+            "label": "Dissipation Configure",
+            "name": "MuSpinSim Configure",
+            "outputs": [
+                {
+                    "name": "out_file",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 486.0500030517578,
+                "height": 102.05000305175781,
+                "left": 564.25,
+                "right": 764.25,
+                "top": 384,
+                "width": 200,
+                "x": 564.25,
+                "y": 384
+            },
+            "post_job_actions": {
+                "HideDatasetActionout_file": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "out_file"
+                }
+            },
+            "tool_id": "muspinsim_config",
+            "tool_state": "{\"experiment_params\": {\"experiment\": {\"experiment_preset\": \"custom\", \"__current_case__\": 2, \"x_axis\": \"time\", \"y_axis\": \"asymmetry\", \"fields\": [{\"__index__\": 0, \"field\": \"2.0/muon_gyr\"}], \"polarizations\": []}, \"average_axes\": [\"orientation\"], \"orientations\": [], \"euler_convention\": \"zyz\", \"times\": [{\"__index__\": 0, \"time\": \"range(0, 1.0, 50)\"}], \"temperatures\": []}, \"fitting_params\": {\"fitting_options\": {\"fitting\": \"\", \"__current_case__\": 1}}, \"interaction_params\": {\"interactions\": [{\"__index__\": 0, \"interaction_options\": {\"interaction\": \"dissipation\", \"__current_case__\": 4, \"dis_index\": \"1\", \"dis_val\": \"5.0\"}}]}, \"out_file_prefix\": \"dissipation\", \"spins\": {\"spins\": [{\"__index__\": 0, \"spin_options\": {\"spin_preset\": \"mu\", \"__current_case__\": 1}}]}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.0+galaxy0",
+            "type": "tool",
+            "uuid": "09a7d155-1d32-4d9f-a01b-5221f2ad969a",
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "A set of Datapoints to plot theoretical line for dissipation",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "A set of Datapoints to plot theoretical line for dissipation",
+                    "name": "Theoretical Datapoints for Dissipation"
+                }
+            ],
+            "label": "Theoretical Datapoints for Dissipation",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 760.1499938964844,
+                "height": 81.64999389648438,
+                "left": 870,
+                "right": 1070,
+                "top": 678.5,
+                "width": 200,
+                "x": 870,
+                "y": 678.5
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"tag\": \"\"}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "5017e323-da4a-4b86-a106-950bee841b4c",
+            "workflow_outputs": []
+        },
+        "2": {
+            "annotation": "Run Simulation",
+            "content_id": "muspinsim",
+            "errors": null,
+            "id": 2,
+            "input_connections": {
+                "mu_sim": {
+                    "id": 0,
+                    "output_name": "out_file"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MuSpinSim Simulate",
+                    "name": "mu_exp_in"
+                }
+            ],
+            "label": null,
+            "name": "MuSpinSim Simulate",
+            "outputs": [
+                {
+                    "name": "muspinsim_results",
+                    "type": "input"
+                },
+                {
+                    "name": "log_out",
+                    "type": "txt"
+                },
+                {
+                    "name": "fit_report",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 650.0166625976562,
+                "height": 265.26666259765625,
+                "left": 855.5,
+                "right": 1055.5,
+                "top": 384.75,
+                "width": 200,
+                "x": 855.5,
+                "y": 384.75
+            },
+            "post_job_actions": {
+                "HideDatasetActionmuspinsim_results": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "muspinsim_results"
+                }
+            },
+            "tool_id": "muspinsim",
+            "tool_state": "{\"mu_exp_in\": {\"__class__\": \"RuntimeValue\"}, \"mu_sim\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1.0+galaxy1",
+            "type": "tool",
+            "uuid": "a19aa1fc-a6eb-4070-8d57-e65845ebe6e2",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "log_out",
+                    "uuid": "18ea39a3-6b83-4bcc-9ce9-b3dc85360ff4"
+                },
+                {
+                    "label": null,
+                    "output_name": "fit_report",
+                    "uuid": "1d9aa832-215a-4573-8e63-6889a19dacd7"
+                }
+            ]
+        },
+        "3": {
+            "annotation": "Plot Output (PNG file)",
+            "content_id": "muspinsim_plot",
+            "errors": null,
+            "id": 3,
+            "input_connections": {
+                "mu_out_series_0|mu_data": {
+                    "id": 2,
+                    "output_name": "muspinsim_results"
+                },
+                "mu_out_series_1|mu_data": {
+                    "id": 1,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "MuSpinSim Plot",
+            "outputs": [
+                {
+                    "name": "out_file_png",
+                    "type": "png"
+                }
+            ],
+            "position": {
+                "bottom": 769.4666595458984,
+                "height": 204.46665954589844,
+                "left": 1180,
+                "right": 1380,
+                "top": 565,
+                "width": 200,
+                "x": 1180,
+                "y": 565
+            },
+            "post_job_actions": {},
+            "tool_id": "muspinsim_plot",
+            "tool_state": "{\"mu_out_series\": [{\"__index__\": 0, \"mu_data\": {\"__class__\": \"RuntimeValue\"}, \"mu_label\": \"Simulation\", \"colour\": \"g\", \"series_type\": {\"type\": \"points\", \"__current_case__\": 1, \"pointstyle\": \"s\", \"pointscale\": \"3.0\"}}, {\"__index__\": 1, \"mu_data\": {\"__class__\": \"RuntimeValue\"}, \"mu_label\": \"Theory\", \"colour\": \"k\", \"series_type\": {\"type\": \"line\", \"__current_case__\": 0, \"linestyle\": \"solid\", \"linewidth\": \"1.0\"}}], \"out_file_type\": \"png\", \"title\": \"Dissipation Example\", \"xlab\": \"t\", \"ylab\": \"Asymmetry\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.5.1+galaxy0",
+            "type": "tool",
+            "uuid": "fc3cb858-bfc2-4bc7-9b0c-4dab6b21967c",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_file_png",
+                    "uuid": "9e016f9a-e402-4135-a4a6-787f04ace0b3"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "1d610b57-a40f-4d0b-a814-59d6ef59c6e5",
+    "version": 3
+}
