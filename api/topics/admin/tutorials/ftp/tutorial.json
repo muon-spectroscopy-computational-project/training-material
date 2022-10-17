@@ -21,6 +21,7 @@
       "email": "lucille.delisle@epfl.ch",
       "orcid": "0000-0002-1964-4960",
       "joined": "2019-08",
+      "elixir_node": "ch",
       "id": "lldelisle",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/lldelisle.json"
     }
@@ -44,7 +45,7 @@
     "data",
     "git-gat"
   ],
-  "last_modified_at": "2022-03-07T15:26:55+00:00",
+  "last_modified_at": "21-Jul-22",
   "url": "/topics/admin/tutorials/ftp/tutorial.html",
   "topic_name": "admin",
   "tutorial_name": "ftp"

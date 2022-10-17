@@ -6,6 +6,7 @@
     {
       "name": "Cristóbal Gallardo",
       "joined": "2020-11",
+      "elixir_node": "de",
       "id": "gallardoalba",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/gallardoalba.json"
     },
@@ -19,7 +20,7 @@
   "priority": 4,
   "video": true,
   "zenodo_link": "",
-  "last_modified_at": "2021-04-16T14:17:09+00:00",
+  "last_modified_at": "16-Apr-21",
   "url": "/topics/transcriptomics/tutorials/mirna-target-finder/slides.html",
   "topic_name": "transcriptomics",
   "tutorial_name": "mirna-target-finder"

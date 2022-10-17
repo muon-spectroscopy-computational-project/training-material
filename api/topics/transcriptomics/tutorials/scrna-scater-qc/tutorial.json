@@ -53,12 +53,13 @@
       "orcid": "0000-0003-3627-5340",
       "twitter": "NicolaSoranzo",
       "joined": "2017-09",
+      "elixir_node": "uk",
       "id": "nsoranzo",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/nsoranzo.json"
     }
   ],
   "gitter": "Galaxy-Training-Network/galaxy-single-cell",
-  "last_modified_at": "2021-11-26T14:22:34+00:00",
+  "last_modified_at": "26-Nov-21",
   "url": "/topics/transcriptomics/tutorials/scrna-scater-qc/tutorial.html",
   "topic_name": "transcriptomics",
   "tutorial_name": "scrna-scater-qc"

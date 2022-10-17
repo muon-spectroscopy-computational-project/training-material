@@ -28,6 +28,7 @@
       "gitter": "foellmelanie",
       "orcid": "0000-0002-1887-7543",
       "joined": "2018-10",
+      "elixir_node": "de",
       "id": "foellmelanie",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/foellmelanie.json"
     },
@@ -39,6 +40,7 @@
       "orcid": "0000-0002-3079-6586",
       "linkedin": "bgruening",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "bgruening",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
     }
@@ -48,7 +50,7 @@
     "mouse",
     "imaging"
   ],
-  "last_modified_at": "2021-05-31T09:06:26+00:00",
+  "last_modified_at": "31-May-21",
   "url": "/topics/proteomics/tutorials/mass-spectrometry-imaging-loading-exploring-data/tutorial.html",
   "topic_name": "proteomics",
   "tutorial_name": "mass-spectrometry-imaging-loading-exploring-data"

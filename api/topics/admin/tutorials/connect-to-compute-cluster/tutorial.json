@@ -40,6 +40,7 @@
       "orcid": "0000-0002-3079-6586",
       "linkedin": "bgruening",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "bgruening",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
     },
@@ -50,6 +51,7 @@
       "maintainer_contact": "gitter",
       "gitter": "hexylena",
       "joined": "2017-09",
+      "elixir_node": "nl",
       "id": "hexylena",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
     }
@@ -79,7 +81,7 @@
       ]
     }
   ],
-  "last_modified_at": "2022-03-07T15:18:30+00:00",
+  "last_modified_at": "11-Oct-22",
   "url": "/topics/admin/tutorials/connect-to-compute-cluster/tutorial.html",
   "topic_name": "admin",
   "tutorial_name": "connect-to-compute-cluster"

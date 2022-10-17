@@ -30,17 +30,19 @@
       "email": "anup.rulez@gmail.com",
       "twitter": "musafirtweetsz",
       "joined": "2018-08",
+      "elixir_node": "de",
       "id": "anuprulez",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/anuprulez.json"
     },
     {
       "name": "Simon Bray",
       "joined": "2019-05",
+      "elixir_node": "de",
       "id": "simonbray",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/simonbray.json"
     }
   ],
-  "last_modified_at": "2021-03-12T17:24:55+00:00",
+  "last_modified_at": "12-Mar-21",
   "url": "/topics/statistics/tutorials/regression_machinelearning/tutorial.html",
   "topic_name": "statistics",
   "tutorial_name": "regression_machinelearning"

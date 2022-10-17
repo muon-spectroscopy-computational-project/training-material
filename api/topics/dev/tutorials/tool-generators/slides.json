@@ -18,11 +18,12 @@
       "name": "Ross Lazarus",
       "email": "ross.lazarus@gmail.com",
       "joined": "2021-02",
+      "elixir_node": "au",
       "id": "fubar2",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/fubar2.json"
     }
   ],
-  "last_modified_at": "2021-06-09T04:50:15+00:00",
+  "last_modified_at": "09-Jun-21",
   "url": "/topics/dev/tutorials/tool-generators/slides.html",
   "topic_name": "dev",
   "tutorial_name": "tool-generators"

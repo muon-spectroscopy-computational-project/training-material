@@ -17,6 +17,15 @@
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html" />
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
+<meta name="DC.type" content="text" />
+<meta name="DC.title" content="Pangeo Notebook in Galaxy - Introduction to Xarray" />
+<meta name="DC.publisher" content="Galaxy Training Network" />
+<meta name="DC.date" content="1970-01-01 00:00:08 +0000" />
+<meta name="DC.creator" content="Anne Fouilloux" />
 
         
         
@@ -24,9 +33,11 @@
         
         
         <meta name="description" content="Learn to analyze climate data through Galaxy." />
+        <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Pangeo Notebook in Galaxy - Introduction to Xarray" />
         <meta property="og:description" content="Learn to analyze climate data through Galaxy." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+
     </head>
     <body data-spy="scroll" data-target="#toc">
         <header>
@@ -243,27 +254,14 @@
 
 {
   "@context": "http://schema.org",
-  "@type": "Course",
-  "accessMode": [
-    "textual",
-    "visual"
-  ],
-  "accessModeSufficient": [
-    "textual",
-    "visual"
-  ],
-  "accessibilityControl": [
-    "fullKeyboardControl",
-    "fullMouseControl"
-  ],
-  "accessibilityFeature": [
-    "alternativeText",
-    "tableOfContents"
-  ],
-  "accessibilitySummary": "Short descriptions are present but long descriptions will be needed for non-visual users",
+  "@type": "LearningResource",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+    "@type": "CreativeWork"
+  },
   "audience": {
     "@type": "EducationalAudience",
-    "educationalRole": "students"
+    "educationalRole": "Students"
   },
   "citation": {
     "@type": "CreativeWork",
@@ -276,7 +274,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:42 +0000",
+  "dateModified": "1970-01-01 00:00:08 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Pangeo Notebook in Galaxy - Introduction to Xarray",
   "interactivityType": "mixed",
@@ -301,28 +299,46 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "identifier": "https://github.com/galaxyproject/training-material",
+  "accessMode": [
+    "textual",
+    "visual"
+  ],
+  "accessModeSufficient": [
+    "textual",
+    "visual"
+  ],
+  "accessibilityControl": [
+    "fullKeyboardControl",
+    "fullMouseControl"
+  ],
+  "accessibilityFeature": [
+    "alternativeText",
+    "tableOfContents"
+  ],
+  "accessibilitySummary": "The text aims to be as accessible as possible. Image descriptions will vary per tutorial, from images being completely inaccessible, to images with good descriptions for non-visual users.",
   "isPartOf": {
     "@type": "CreativeWork",
     "name": "Climate",
     "description": "Learn to analyze climate data through Galaxy.",
-    "url": "https://training.galaxyproject.org//training-material/topics/climate/"
+    "url": "https://training.galaxyproject.org/training-material/topics/climate/"
   },
-  "courseCode": "climate / pangeo-notebook / hands-on",
   "learningResourceType": "hands-on tutorial",
   "name": "Hands-on for 'Pangeo Notebook in Galaxy - Introduction to Xarray' tutorial",
-  "url": "https://training.galaxyproject.org//training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html",
+  "url": "https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/tutorial.html",
   "timeRequired": "PT1H",
-  "keywords": "pangeo, interactive-tools, jupyter-notebook, jupyter-notebook",
+  "keywords": "climate, pangeo, interactive-tools, jupyter-notebook, jupyter-notebook",
   "description": "The questions this  addresses are:\n - What is Pangeo notebook?\n - How to start Pangeo Notebook in Galaxy?\n - What are the main software components of the Pangeo ecosystem?\n - What is Xarray?\n - How to manipulate Xarrays?\n - How to print metadata information?\n - How to make a selection?\n - How to visualize?\n - How to filter?\n - How to make reduction operations (mean, max, min)?\n - How to resample my data?\n - Where to go next?\n\n\\nThe objectives are:\n - Learn to get metadata information using Xarray Galaxy Tools\n - Learn to select data\n - Learn to visualize data\n - Learn to filter, make reduction operations (mean, max, min)\n - Learn to resample my data\n - Learn to cite and contribute to Pangeo\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
     "alternateName": "en"
   },
-  "coursePrerequisites": [
+  "competencyRequired": [
     {
-      "@type": "CreativeWork",
-      "url": "https://training.galaxyproject.org//training-material/topics/introduction/",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/introduction/",
       "name": "Introduction to Galaxy Analyses",
       "description": "Introduction to Galaxy Analyses",
       "provider": {
@@ -333,8 +349,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/python-basics/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-basics/tutorial.html",
       "name": "Introduction to Python",
       "description": "Hands-on for 'Introduction to Python' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -347,8 +364,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/python-plotting/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-plotting/tutorial.html",
       "name": "Plotting in Python",
       "description": "Hands-on for 'Plotting in Python' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -361,8 +379,9 @@
       }
     },
     {
-      "@type": "Course",
-      "url": "https://training.galaxyproject.org//training-material/topics/data-science/tutorials/python-advanced-np-pd/tutorial.html",
+      "@context": "http://schema.org",
+      "@type": "LearningResource",
+      "url": "https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-advanced-np-pd/tutorial.html",
       "name": "Advanced Python",
       "description": "Hands-on for 'Advanced Python' tutorial",
       "learningResourceType": "hands-on tutorial",
@@ -380,19 +399,50 @@
       "name": "Data Carpentry Geospatial Workshop"
     }
   ],
-  "hasPart": [
-
-  ],
   "author": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "contributor": [
     {
+      "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Anne Fouilloux"
+      "http://purl.org/dc/terms/conformsTo": {
+        "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
+        "@type": "Person"
+      },
+      "url": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/annefou/",
+      "name": "Anne Fouilloux",
+      "image": "https://avatars.githubusercontent.com/annefou",
+      "description": "A contributor to the GTN project.",
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "email": "galaxytrainingnetwork@gmail.com",
+          "name": "Galaxy Training Network",
+          "url": "https://galaxyproject.org/teach/gtn/"
+        }
+      ]
     }
   ],
   "about": [
@@ -400,7 +450,7 @@
       "@type": "CreativeWork",
       "name": "Climate",
       "description": "Learn to analyze climate data through Galaxy.",
-      "url": "https://training.galaxyproject.org//training-material/topics/climate/"
+      "url": "https://training.galaxyproject.org/training-material/topics/climate/"
     }
   ]
 }
@@ -410,12 +460,15 @@
     <h1 data-toc-skip>Pangeo Notebook in Galaxy - Introduction to Xarray</h1>
     
 
+    <div markdown="0">
 
-    <div class="contributors-line">Authors: 
+	<div class="contributors-line">
+		Authors: 
 <a href="/training-material/hall-of-fame/annefou/" class="contributor-badge contributor-annefou"><img src="https://avatars.githubusercontent.com/annefou?s=27" alt="Avatar">Anne Fouilloux</a>
 
 
-<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+	</div>
 
 </div>
 
@@ -527,6 +580,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Introduction to Python:
                             
@@ -536,6 +591,34 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -588,6 +671,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Plotting in Python:
                             
@@ -597,6 +682,34 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -621,6 +734,36 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -686,7 +829,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.5805953">
+<a class="btn btn-default topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.5805953">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
@@ -697,7 +840,7 @@
                 <li class="btn btn-default supporting_material">
 
 
-    <a class="topic-icon" href="/training-material/topics/climate/tutorials/pangeo-notebook/workflows/" title="Workflows" alt="Pangeo Notebook in Galaxy - Introduction to Xarray workflows">
+    <a class="btn btn-default topic-icon" href="/training-material/topics/climate/tutorials/pangeo-notebook/workflows/" title="Workflows" alt="Pangeo Notebook in Galaxy - Introduction to Xarray workflows">
         <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
     </a>
 
@@ -743,7 +886,33 @@
 
 
 
+
+
   
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span>&nbsp;Recordings
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+
+        
+        
+        
+
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/climate/pangeo-notebook/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (March 2022)
+            </a>
+        </li>
+        
+        
+        
+        
+    </ul>
+   </li>
+   
 
 
 
@@ -752,7 +921,7 @@
 
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span>&nbsp;Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -762,12 +931,6 @@
             </a>
         </li>
     
-    
-        
-        <a class="dropdown-item" href="http://aspendb.uga.edu:8085/" title="AGEseq @ AspenDB">
-            AGEseq @ AspenDB
-        </a>
-        
     
         
         <a class="dropdown-item" href="http://motherbox.chemeng.ntua.gr/anastasia_dev/" title="ANASTASIA">
@@ -808,12 +971,6 @@
         
         <a class="dropdown-item" href="http://143.169.238.104/galaxy/" title="Biomina">
             Biomina
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="https://pistacho.ac.uma.es/galaxy-bitlab" title="BitLAB">
-            BitLAB
         </a>
         
     
@@ -1004,18 +1161,6 @@
         
     
         
-        <a class="dropdown-item" href="http://galaxy.lappsgrid.org/" title="LAPPS Grid">
-            LAPPS Grid
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.ul.edu.lb/" title="Lebanese University Galaxy">
-            Lebanese University Galaxy
-        </a>
-        
-    
-        
         <a class="dropdown-item" href="https://ml.usegalaxy.eu/" title="Machine Learning Workbench">
             Machine Learning Workbench
         </a>
@@ -1024,12 +1169,6 @@
         
         <a class="dropdown-item" href="https://neo.engr.uconn.edu/" title="Mandoiu Lab">
             Mandoiu Lab
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://galaxy.informatik.uni-halle.de" title="Martin Luther U. Halle-Wittenberg">
-            Martin Luther U. Halle-Wittenberg
         </a>
         
     
@@ -1082,12 +1221,6 @@
         
     
         
-        <a class="dropdown-item" href="https://galaxy.bio.di.uminho.pt/" title="PhagePromotor">
-            PhagePromotor
-        </a>
-        
-    
-        
         <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
             Plant Anaylsis Workbench
         </a>
@@ -1096,6 +1229,12 @@
         
         <a class="dropdown-item" href="http://protologger.de/" title="Protologger">
             Protologger
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="http://ribogalaxy.ucc.ie/" title="RiboGalaxy">
+            RiboGalaxy
         </a>
         
     
@@ -1197,9 +1336,12 @@
             <div class="col-sm-10">
                  
                      
+                     
+                     
+                     
                     
                         
-                        <!--SNIPPET--><blockquote class="comment">  <h3 data-toc-skip id="comment-this-is-best-viewed-in-pangeo-jupyter-lab"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> This is best viewed in Pangeo Jupyter Lab</h3>  <ol>    <li>      <p>Create a history</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-create-history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Create history</h3>        <ol>          <li>Make sure you start from an empty analysis history.</li>          <li><strong>Rename your history</strong> to be meaningful and easy to find. For instance, you can choose <strong>Xarray with Pangeo notebook</strong> as the name of your new history.</li>        </ol>      </blockquote>    </li>    <li>      <p>Upload CAMS PM2.5 data</p>      <p>Data can be retrieved directly from <a href="https://ads.atmosphere.copernicus.eu/">Copernicus Atmosphere Monitoring Service</a> but to make it easier, you can download the tutorial data from <a href="https://zenodo.org/record/5805953/files/CAMS-PM2_5-20211222.netcdf">Zenodo</a>.</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>        <ol>          <li>Create a new history for this tutorial</li>          <li>            <p>Import the files from <a href="https://doi.org/10.5281/zenodo.5805953">Zenodo</a> or fromthe shared data library (<code class="language-plaintext highlighter-rouge">GTN - Material</code> -&gt; <code class="language-plaintext highlighter-rouge">Climate</code> -&gt; <code class="language-plaintext highlighter-rouge">Pangeo Notebook in Galaxy - Introduction to Xarray</code>):</p>            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/5805953/files/CAMS-PM2_5-20211222.netcdf</code></pre></div>            </div>          </li>          <li>Rename the dataset to <strong>CAMS-PM2_5-20211222.netcdf</strong></li>          <li>Check that the datatype is <strong>netcdf</strong></li>        </ol>      </blockquote>    </li>    <li>      <p>Starting Galaxy Pangeo JupyterLab</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-launch-pangeo-notebook-jupyterlab-in-galaxy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Launch Pangeo notebook JupyterLab in Galaxy</h3>        <p>Currently Pangeo notebook in Galaxy is available on <a href="https://usegalaxy.eu">useGalaxy.eu</a> only. Make sure you login to Galaxy and search for Pangeo notebook and not the default JupyterLab in Galaxy to make sure you ahve all the Pangeo Software stack available. The default JupyterLab in Galaxy would not be sufficient for executing all the tasks in this tutorial.</p>        <ol>          <li>Open the <span class="tool" data-tool="interactive_tool_pangeo_notebook" title="Tested with interactive_tool_pangeo_notebook"><strong>Pangeo Notebook</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_pangeo_notebook</span></span>  by clicking <a href="https://usegalaxy.eu/?tool_id=interactive_tool_pangeo_notebook" target="_blank">here</a></li>          <li><em>Include data into the environment</em>: <code class="language-plaintext highlighter-rouge">CAMS-PM2_5-20211222.netcdf</code></li>          <li>Click on <strong>Execute</strong>: the tool will start running and will stay running</li>          <li>Click on the <strong>User</strong> menu at the top and go to <strong>Active Interactive Tools</strong> and locate the Pangeo JupyterLab instance you started.</li>          <li>Click on your Pangeo JupyterLab instance</li>        </ol>      </blockquote>    </li>    <li>      <p>Once the notebook has started, open a Terminal in Jupyter <strong>File → New → Terminal</strong></p>    </li>    <li>      <p>Run the following command:</p>      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/climate-pangeo-notebook.ipynb</code></pre></div>      </div>    </li>    <li>      <p>Switch to the Notebook that appears in the list of files on the left</p>    </li>  </ol></blockquote>
+                        <!--SNIPPET--><blockquote class="comment">  <h3 data-toc-skip id="comment-this-is-best-viewed-in-pangeo-jupyter-lab"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> This is best viewed in Pangeo Jupyter Lab</h3>  <ol>    <li>      <p>Create a history</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-create-history"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Create history</h3>        <ol>          <li>Make sure you start from an empty analysis history.</li>          <li><strong>Rename your history</strong> to be meaningful and easy to find. For instance, you can choose <strong>Xarray with Pangeo notebook</strong> as the name of your new history.</li>        </ol>      </blockquote>    </li>    <li>      <p>Upload CAMS PM2.5 data</p>      <p>Data can be retrieved directly from <a href="https://ads.atmosphere.copernicus.eu/">Copernicus Atmosphere Monitoring Service</a> but to make it easier, you can download the tutorial data from <a href="https://zenodo.org/record/5805953/files/CAMS-PM2_5-20211222.netcdf">Zenodo</a>.</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>        <ol>          <li>Create a new history for this tutorial</li>          <li>            <p>Import the files from <a href="https://doi.org/10.5281/zenodo.5805953">Zenodo</a> or fromthe shared data library (<code class="language-plaintext highlighter-rouge">GTN - Material</code> -&gt; <code class="language-plaintext highlighter-rouge">Climate</code> -&gt; <code class="language-plaintext highlighter-rouge">Pangeo Notebook in Galaxy - Introduction to Xarray</code>):</p>            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/5805953/files/CAMS-PM2_5-20211222.netcdf<br></code></pre></div>            </div>          </li>          <li>Rename the dataset to <strong>CAMS-PM2_5-20211222.netcdf</strong></li>          <li>Check that the datatype is <strong>netcdf</strong></li>        </ol>      </blockquote>    </li>    <li>      <p>Starting Galaxy Pangeo JupyterLab</p>      <blockquote class="hands_on">        <h3 data-toc-skip id="hands_on-hands-on-launch-pangeo-notebook-jupyterlab-in-galaxy"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Launch Pangeo notebook JupyterLab in Galaxy</h3>        <p>Currently Pangeo notebook in Galaxy is available on <a href="https://usegalaxy.eu">useGalaxy.eu</a> only. Make sure you login to Galaxy and search for Pangeo notebook and not the default JupyterLab in Galaxy to make sure you ahve all the Pangeo Software stack available. The default JupyterLab in Galaxy would not be sufficient for executing all the tasks in this tutorial.</p>        <ol>          <li>Open the <span class="tool" data-tool="interactive_tool_pangeo_notebook" title="Tested with interactive_tool_pangeo_notebook"><strong>Pangeo Notebook</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_pangeo_notebook</span></span>  by clicking <a href="https://usegalaxy.eu/?tool_id=interactive_tool_pangeo_notebook">here</a></li>          <li><em>Include data into the environment</em>: <code class="language-plaintext highlighter-rouge">CAMS-PM2_5-20211222.netcdf</code></li>          <li>Click on <strong>Execute</strong>: the tool will start running and will stay running</li>          <li>Click on the <strong>User</strong> menu at the top and go to <strong>Active Interactive Tools</strong> and locate the Pangeo JupyterLab instance you started.</li>          <li>Click on your Pangeo JupyterLab instance</li>        </ol>      </blockquote>    </li>    <li>      <p>Once the notebook has started, open a Terminal in Jupyter <strong>File → New → Terminal</strong></p>    </li>    <li>      <p>Run the following command:</p>      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://training.galaxyproject.org/training-material/topics/climate/tutorials/pangeo-notebook/climate-pangeo-notebook.ipynb<br></code></pre></div>      </div>    </li>    <li>      <p>Switch to the Notebook that appears in the list of files on the left</p>    </li>  </ol></blockquote>
                     
                  
 
@@ -1887,6 +2029,9 @@ Data variables:
                 
 
                 
+
+
+                
                 <h1 id="bibliography">References</h1>
                 <ol class="bibliography"><li id="Abernathey2017">Abernathey, R., kevin paul, joe hamman, matthew rocklin, chiara lepore <i>et al.</i>, 2017 <b>Pangeo NSF Earthcube Proposal</b>. <a href="https://doi.org/10.6084/m9.figshare.5361094.v1">10.6084/m9.figshare.5361094.v1</a> <a href="https://figshare.com/articles/Pangeo_NSF_Earthcube_Proposal/5361094">https://figshare.com/articles/Pangeo_NSF_Earthcube_Proposal/5361094</a></li>
 <li id="Abernathey2021">Abernathey, R. P., T. Augspurger, A. Banihirwe, C. C. Blackmon-Luca, T. J. Crone <i>et al.</i>, 2021 <b>Cloud-Native Repositories for Big Scientific Data</b>. Computing in Science &amp; Engineering 23: 26–35. <a href="https://doi.org/10.1109/mcse.2021.3059437">10.1109/mcse.2021.3059437</a></li>
@@ -1897,7 +2042,7 @@ Data variables:
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452">how it went</a>.
                 <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
                 </p>
 
@@ -1928,8 +2073,6 @@ Data variables:
                         });
                     })(window, document);
                 </script>
-
-
 
                 <h1>Citing this Tutorial</h1>
                 <p>
@@ -1973,6 +2116,8 @@ note = "[Online; accessed TODAY]"
                 </pre></div></div>
                 </p>
                 </blockquote>
+
+                
 
 
 <script type="text/javascript">

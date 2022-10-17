@@ -23,6 +23,7 @@
       "name": "Joachim Wolff",
       "email": "wolffj@informatik.uni-freiburg.de",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "joachimwolff",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/joachimwolff.json"
     },
@@ -33,7 +34,7 @@
       "url": "https://training.galaxyproject.org/training-material/api/contributors/dpryan79.json"
     }
   ],
-  "last_modified_at": "2019-04-25T11:33:55+00:00",
+  "last_modified_at": "25-Apr-19",
   "url": "/topics/epigenetics/tutorials/methylation-seq/tutorial.html",
   "topic_name": "epigenetics",
   "tutorial_name": "methylation-seq"

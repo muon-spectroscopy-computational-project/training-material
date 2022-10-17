@@ -31,17 +31,19 @@
       "name": "Simon Gladman",
       "email": "simon.gladman@unimelb.edu.au",
       "joined": "2017-09",
+      "elixir_node": "au",
       "id": "slugger70",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/slugger70.json"
     },
     {
       "name": "Torsten Seemann",
       "joined": "2018-06",
+      "elixir_node": "au",
       "id": "tseemann",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/tseemann.json"
     }
   ],
-  "last_modified_at": "2021-03-23T18:12:58+00:00",
+  "last_modified_at": "17-Oct-22",
   "url": "/topics/variant-analysis/tutorials/microbial-variants/tutorial.html",
   "topic_name": "variant-analysis",
   "tutorial_name": "microbial-variants"

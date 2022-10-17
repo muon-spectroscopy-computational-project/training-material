@@ -22,6 +22,7 @@
       "name": "Clemens Blank",
       "email": "blankclemens@gmail.com",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "blankclemens",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/blankclemens.json"
     },
@@ -40,12 +41,13 @@
       "orcid": "0000-0002-3079-6586",
       "linkedin": "bgruening",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "bgruening",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
     }
   ],
   "subtopic": "advanced",
-  "last_modified_at": "2021-07-09T11:43:26+00:00",
+  "last_modified_at": "09-Jul-21",
   "url": "/topics/dev/tutorials/webhooks/slides.html",
   "topic_name": "dev",
   "tutorial_name": "webhooks"

@@ -23,6 +23,7 @@
       "email": "lucille.delisle@epfl.ch",
       "orcid": "0000-0002-1964-4960",
       "joined": "2019-08",
+      "elixir_node": "ch",
       "id": "lldelisle",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/lldelisle.json"
     },
@@ -35,11 +36,12 @@
     {
       "name": "Florian Heyl",
       "joined": "2018-08",
+      "elixir_node": "de",
       "id": "heylf",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/heylf.json"
     }
   ],
-  "last_modified_at": "2021-06-22T11:03:25+00:00",
+  "last_modified_at": "22-Jun-21",
   "url": "/topics/epigenetics/tutorials/atac-seq/tutorial.html",
   "topic_name": "epigenetics",
   "tutorial_name": "atac-seq"

@@ -24,6 +24,7 @@
       "orcid": "0000-0003-3803-468X",
       "joined": "2017-09",
       "bio": "Researcher at Erasmus Medical Center",
+      "elixir_node": "nl",
       "id": "shiltemann",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/shiltemann.json"
     },
@@ -41,6 +42,7 @@
       "orcid": "0000-0002-3079-6586",
       "linkedin": "bgruening",
       "joined": "2017-09",
+      "elixir_node": "de",
       "id": "bgruening",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bgruening.json"
     },
@@ -57,7 +59,7 @@
       "url": "https://training.galaxyproject.org/training-material/api/contributors/dannon.json"
     }
   ],
-  "last_modified_at": "2021-07-09T11:43:26+00:00",
+  "last_modified_at": "09-Jul-21",
   "url": "/topics/dev/tutorials/visualization-charts/slides.html",
   "topic_name": "dev",
   "tutorial_name": "visualization-charts"

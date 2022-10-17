@@ -209,22 +209,25 @@ convention, so that our tools will know which files belong together. We do this 
 >    - Change `_2` to `_R2` om the text field on the top right
 >
 >    You should now see a list of pairs suggested by Galaxy:
->    ![List of suggested paired datasets](../../images/create_collection.png) <br><br>
+>    ![List of suggested paired datasets](../../images/create_collection.png)
 >
-> 4. Click on **auto-pair** to create the suggested pairs.
->
->      ![The result of pairing](../../images/create_collection2.png) <br><br>
+> 4. Click on **Auto-pair** to create the suggested pairs.
+>   - Or click on "Pair these datasets" manually for every pair that looks correct.
 >
 > 5. **Name the pairs**
 >    - The middle segment is the name for each pair.
 >    - These names will be used as sample names in the downstream analysis, so always make sure they are informative!
+>    - Make sure that {% icon param-check %} `Remove file extensions` is checked
 >    - **Check** that the pairs are named `F3D0`-`F3D9`, `F3D141`-`F3D150` and `Mock`.
->      - If needed, the names can be edited by clicking on them
->      - **Important:** On older Galaxy versions, if the files were imported via URL, they may have the full URL as sample name;
->        please remove everything except the sample name for each pair!
+>      - Note: The names should **not** have the .fastq extension
+>      - If needed, the names can be edited manually by clicking on them
+>
+>    ![The result of pairing](../../images/create_collection2.png)
 >
 > 6. **Name your collection** at the bottom right of the screen
-> 7. Click the **Create List** button. A new dataset collection item will now appear in your history
+>   - You can pick whatever name makes sense to you
+> 7. Click the **Create Collection** button.
+>    - A new dataset collection item will now appear in your history
 {: .hands_on}
 
 
@@ -290,7 +293,7 @@ Next, we want to improve the quality of our data. To this end we will run a work
    We know that the V4 region of the 16S gene is around 250 bp long. Anything significantly longer
    was likely a poorly assembled contig. We will remove any contigs longer than 275 base pairs using the **Screen.seqs** {% icon tool %} tool.
 2. **Remove low quality contigs** \\
-   We will also remove any contigs containing too many ambiguous base calls.
+   We will also remove any contigs containing too many ambiguous base calls. This is also done in the **Screen.seqs** {% icon tool %} tool.
 3. **Deduplicate sequences** \\
    Since we are sequencing many of the same organisms, there will likely be many identical contigs. To speed up downstream analysis we will determine the set of unique contigs using **Unique.seqs** {% icon tool %}.
 
@@ -307,6 +310,7 @@ Next, we want to improve the quality of our data. To this end we will run a work
 >    - *"Send results to a new history"*: `No`
 >    - {% icon param-file %} *"1: Contigs"*: the `trim.contigs.fasta` output from **Make.contigs** {% icon tool %}
 >    - {% icon param-file %} *"2: Groups"*: the `group file` from **Make.contigs** {% icon tool%}
+>    - {% icon param-text %} *"3: max seq len"*: Set a maximum sequence length of 275
 >
 >    {% snippet faqs/galaxy/workflows_run.md %}
 >
@@ -491,6 +495,10 @@ For more information on the topic of alignment, please see our training material
 We are now ready to align our sequences to the reference. This is an important
 step to improve the clustering of your OTUs {% cite Schloss2012 %}.
 
+In mothur this is done by determining for each unique sequence the entry of the reference database that
+has the most k-mers in common (i.e. the most substring of fixed length k). For the reference sequence
+with the most common k-mers and the unique sequence a standard global sequence alignment is computed
+(using the Needleman-Wunsch algorithm).
 
 > ### {% icon hands_on %} Hands-on: Align sequences
 >
@@ -954,7 +962,7 @@ the reads from our mock sample back to their known sequences, to see how many fa
 
 > ### {% icon hands_on %} Hands-on: Assess error rates based on a mock community
 > - {% tool [Seq.error](toolshed.g2.bx.psu.edu/repos/iuc/mothur_seq_error/mothur_seq_error/1.39.5.0) %} with the following parameters
->   - {% icon param-file %} *"pick.fasta"*: the `fasta` output from **Get.groups** {% icon tool %}
+>   - {% icon param-file %} *"fasta"*: the `fasta` output from **Get.groups** {% icon tool %}
 >   - {% icon param-file %} *"reference"*: `HMP_MOCK.v35.fasta` file from your history
 >   - {% icon param-file %} *"count"*: the `count table` from **Get.groups** {% icon tool %}
 >   - {% icon param-check %} *"output log?"*: `yes`
@@ -982,6 +990,13 @@ are also of high quality, and we can continue with our analysis.
 
 We will now estimate the accuracy of our sequencing and analysis pipeline by clustering the Mock sequences into OTUs,
 and comparing the results with the expected outcome.
+
+For this a distance matrix is calculated (i.e. the distances between all pairs of sequences). From this distance matrix
+a clustering is derived using the OptiClust algorithm:
+
+1. OptiClust starts with a random OTU clustering
+2. Then iteratively sequences are moved to all other OTUs or new clusters and the option is chosen that improved the mathews correlation coefficient (MCC)
+3. Step 2 is repeated until the MCC converges
 
 {% include topics/metagenomics/tutorials/mothur-miseq-sop/background_otus.md %}
 
