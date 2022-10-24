@@ -147,6 +147,10 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
+        
+        
+        
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -630,7 +634,7 @@
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -710,6 +714,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Python - Math:
                             
@@ -737,7 +743,17 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -809,7 +825,17 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -881,7 +907,17 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -953,7 +989,17 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -1025,7 +1071,17 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -1097,7 +1153,17 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
+                    
+                        
                     
                         
                     
@@ -1169,7 +1235,21 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -1227,6 +1307,10 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -1320,7 +1404,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Apr 25, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 18, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -1343,7 +1427,7 @@
                      
                     
                         <blockquote class="comment">
-                            <h3><i class="far fa-comment-dots" aria-hidden="true"></i> Best viewed in a Jupyter Notebook</h3>
+                            <div class="box-title" aria-label="comment box">Best viewed in a Jupyter Notebook</div>
                             <p>
                                 This tutorial is best viewed in a Jupyter notebook! You can load this notebook one of the following ways<!--, or you can click to run it in MyBinder-->
                             </p>
@@ -1375,7 +1459,7 @@
                 <p>This module provide something like a recap of everything covered by the modular Python Introductory level curriculum. This serves as something of a graduation into the Intermediate tutorials which cover more advanced topics.</p>
 
 <blockquote class="agenda">
-  <h3 id="agenda">Agenda</h3>
+  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will cover:</p>
 
@@ -1846,7 +1930,7 @@ for sequence in [forward, reverse_complement(forward)]:
 
                 
                 <blockquote class="key_points">
-                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
                     <ul>
                         
                     </ul>
@@ -1920,18 +2004,25 @@ for sequence in [forward, reverse_complement(forward)]:
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
 <code id="citation-code">@misc{data-science-python-basics-recap,
 author = "Helena Rasche and Donny Vrins and Bazante Sanders",
 title = "Python - Introductory Graduation (Galaxy Training Materials)",
 year = "2022",
-month = "04",
-day = "25"
+month = "10",
+day = "18"
 url = "\url{https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-basics-recap/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -1948,8 +2039,8 @@ note = "[Online; accessed TODAY]"
     title = {Community-Driven Data Analysis Training for Biology},
     journal = {Cell Systems}
 }</code>
-                </pre></div></div>
-                </p>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
 
                 
@@ -1962,7 +2053,7 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
 

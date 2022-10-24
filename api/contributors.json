@@ -207,10 +207,11 @@
   {
     "name": "Beatriz Serrano-Solano",
     "email": "beatrizserrano.galaxy@gmail.com",
-    "twitter": "Birthae",
+    "twitter": "BSerranoSolano",
+    "linkedin": "beatriz-serrano",
     "gitter": "beatrizserrano",
+    "orcid": "0000-0002-5862-6132",
     "joined": "2020-07",
-    "elixir_node": "de",
     "id": "beatrizserrano",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/beatrizserrano.json"
   },
@@ -319,6 +320,13 @@
     "joined": "2022-03",
     "id": "breakthewall",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/breakthewall.json"
+  },
+  {
+    "name": "Brigida Gallone",
+    "orcid": "0000-0003-3045-5949",
+    "joined": "2022-05",
+    "id": "brigidagallone",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/brigidagallone.json"
   },
   {
     "name": "Catherine Bromhead",
@@ -472,6 +480,12 @@
     "joined": "2017-09",
     "id": "delphine-l",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/delphine-l.json"
+  },
+  {
+    "name": "Desmond Jasper",
+    "joined": "2020-04",
+    "id": "desmond-jasper",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/desmond-jasper.json"
   },
   {
     "name": "Donny Vrins",

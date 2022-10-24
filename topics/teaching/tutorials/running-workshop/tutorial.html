@@ -148,6 +148,10 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
+        
+        
+        
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -566,7 +570,7 @@
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -593,7 +597,7 @@
 
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Feb 18, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 18, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -611,14 +615,15 @@
             <div class="col-sm-10">
                  
 
-                <h1 class="no_toc" id="introduction">Introduction</h1>
+                <h1 id="introduction">Introduction</h1>
 
 <blockquote class="agenda">
-  <h3 id="agenda">Agenda</h3>
+  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will cover:</p>
 
 <ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#tips-for-instructors" id="markdown-toc-tips-for-instructors">Tips for instructors</a>    <ol>
       <li><a href="#using-the-training-material" id="markdown-toc-using-the-training-material">Using the Training Material</a></li>
       <li><a href="#unexpected-situations" id="markdown-toc-unexpected-situations">(Un)expected situations</a></li>
@@ -631,6 +636,7 @@
       <li><a href="#after-the-workshop" id="markdown-toc-after-the-workshop">After the workshop</a></li>
     </ol>
   </li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
 </ol>
 
 </blockquote>
@@ -823,12 +829,13 @@ sitory_branch: “master”</p>
   <li>Update this document with anything that you did that wasn’t listed.</li>
 </ol>
 
-<h1 class="no_toc" id="conclusion">Conclusion</h1>
+<h1 id="conclusion">Conclusion</h1>
+
 
 
                 
                 <blockquote class="key_points">
-                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
                     <ul>
                         
                         <li><p>The take-home messages</p>
@@ -899,17 +906,24 @@ sitory_branch: “master”</p>
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
 <code id="citation-code">@misc{teaching-running-workshop,
 author = "Bérénice Batut and Björn Grüning and Saskia Hiltemann and Helena Rasche",
 title = "Running a workshop as instructor (Galaxy Training Materials)",
 year = "2022",
-month = "02",
+month = "10",
 day = "18"
 url = "\url{https://training.galaxyproject.org/training-material/topics/teaching/tutorials/running-workshop/tutorial.html}",
 note = "[Online; accessed TODAY]"
@@ -927,8 +941,8 @@ note = "[Online; accessed TODAY]"
     title = {Community-Driven Data Analysis Training for Biology},
     journal = {Cell Systems}
 }</code>
-                </pre></div></div>
-                </p>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
 
                 
@@ -941,7 +955,7 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
 

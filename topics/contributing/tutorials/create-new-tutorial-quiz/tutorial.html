@@ -145,6 +145,10 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
+        
+        
+        
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -413,7 +417,7 @@
 
 
     <blockquote class="overview">
-        <h3>Overview</h3>
+        <div class="box-title" aria-label="overview box">Overview</div>
         
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
         
@@ -508,7 +512,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 23, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 18, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -529,7 +533,7 @@
                 <p>Interactive quizzes can be used either alone, or with a classroom of students, to check student’s knowledge.</p>
 
 <blockquote class="agenda">
-  <h3 id="agenda">Agenda</h3>
+  <div id="agenda" class="box-title" aria-label="agenda box: ">Agenda</div>
 
   <p>In this tutorial, we will cover:</p>
 
@@ -647,7 +651,7 @@
 
                 
                 <blockquote class="key_points">
-                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <div class="box-title" aria-label="key-points box"><i class="fas fa-key" aria-hidden="true"></i> Key points</div>
                     <ul>
                         
                         <li><p>Quizzes are helpful for both self-directed learning, and ensuring that in synchronous classes, students are all following the material</p>
@@ -734,18 +738,25 @@
                     </ol>
                 </p>
 
-
+                <!-- collapsible boxcontaining the BibTeX-formatted citation -->
                 <blockquote class="details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
-                  <p style="display: none;">
 
-                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+                  <div id="citation-bibtex" class="box-title">
+                    <button type="button" aria-controls="citation-bibtex" aria-expanded="false" aria-label="Toggle details box: BibTeX for citing this tutorial">
+                      <i class="fas fa-info-circle" aria-hidden="true"></i>
+                      <span class="visually-hidden"></span> BibTeX<span role="button" class="fold-unfold fa fa-minus-square" aria-hidden="true"></span>
+                    </button>
+                   </div>
+                   <p style="display: none;">
+
+                   <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+
 <code id="citation-code">@misc{contributing-create-new-tutorial-quiz,
 author = "Helena Rasche",
 title = "Adding Quizzes to your Tutorial (Galaxy Training Materials)",
 year = "2022",
-month = "09",
-day = "23"
+month = "10",
+day = "18"
 url = "\url{https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial-quiz/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -762,8 +773,8 @@ note = "[Online; accessed TODAY]"
     title = {Community-Driven Data Analysis Training for Biology},
     journal = {Cell Systems}
 }</code>
-                </pre></div></div>
-                </p>
+                   </pre></div></div>
+                   </p>
                 </blockquote>
 
                 
@@ -776,11 +787,11 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+                <i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!
 
                 
                 <blockquote class="agenda">
-                    <h3>Developing GTN training material</h3>
+                    <div class="box-title" aria-label="agenda box">Developing GTN training material</div>
                     This tutorial is part of a series to develop GTN training material, feel free to also look at:
                     
                     <ol>
@@ -907,6 +918,14 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                             
                                 
                     <li><a href="/training-material/topics/contributing/tutorials/gitpod/tutorial.html">Running the GTN website online using GitPod</a></li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                    <li><a href="/training-material/topics/contributing/tutorials/python/tutorial.html">Teaching Python</a></li>
                                 
                             
                         
