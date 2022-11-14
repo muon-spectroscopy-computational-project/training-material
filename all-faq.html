@@ -24,7 +24,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:41 +0000" />
+<meta name="DC.date" content="2021-03-15 17:53:15 +0000" />
 
         
         
@@ -143,9 +143,6 @@
 
         <!-- link to feedback -->
         
-        
-        
-        
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
             </a>
@@ -187,7 +184,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/all-faq.html" title="Version 2022-03-01">2022-03-01</a>
@@ -1234,6 +1230,13 @@ Contributing to <span class="notranslate">Galaxy</span> is a multi-step process,
 
 
 
+<h4 class="faq-area"> Creating a GTN News post <a href="/training-material/faqs/gtn/gtn_news_create_post.html"><i class="fas fa-external-link-alt"></i></a> </h4>
+
+<!--SNIPPET--><blockquote class="tip">  <div id="tip-creating-a-gtn-news-post" class="box-title"><button type="button" aria-controls="tip-creating-a-gtn-news-post-contents" aria-expanded="true" aria-label="Toggle tip box: Creating a GTN News post"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a GTN News post<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>If you have created a new tutorial, running an event, published a paper around training, or have anything else interesting to share with the GTN community, we encourage you to write a <strong>News item</strong> about it!</p>  <p>News items will show up on the <a href="/training-material/">GTN homepage</a> and in the <a href="/training-material/news.html">GTN news feed</a>.</p>  <p><strong>Creating the news post</strong></p>  <p>Have a look at the existing news items in the <a href="https://github.com/galaxyproject/training-material/tree/main/news/_posts"><code class="language-plaintext highlighter-rouge">news/_posts/</code> folder</a> of the GTN repository for some examples.</p>  <p>A news post is a markdown file that looks as follows:</p>  <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span><br><span class="na">layout</span><span class="pi">:</span> <span class="s">news</span><br><br><span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">New</span><span class="nv"> </span><span class="s">Tutorial:</span><span class="nv"> </span><span class="s">My</span><span class="nv"> </span><span class="s">tutorial</span><span class="nv"> </span><span class="s">title"</span><br><span class="na">tags</span><span class="pi">:</span><br>  <span class="pi">-</span> <span class="s">new tutorial</span><br>  <span class="pi">-</span> <span class="s">transcriptomics</span><br><span class="na">contributors</span><span class="pi">:</span><br>  <span class="pi">-</span> <span class="s">shiltemann</span><br>  <span class="pi">-</span> <span class="s">hexylena</span><br><br><span class="na">tutorial</span><span class="pi">:</span> <span class="s2">"</span><span class="s">topics/introduction/tutorials/data-manipulation-olympics/tutorial.html"</span><br><span class="na">cover</span><span class="pi">:</span> <span class="s2">"</span><span class="s">path/to/cover-image.jpg"</span>  <span class="c1"># usually an image from your tutorial</span><br><span class="na">coveralt</span><span class="pi">:</span> <span class="s2">"</span><span class="s">description</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">cover</span><span class="nv"> </span><span class="s">image"</span><br><br><span class="nn">---</span><br><br>A bit of text containing your news, this is all markdown formatted,<br>so you can do <span class="gs">**bold**</span> and <span class="ge">*italic*</span> text like this, and links look<br>like <span class="p">[</span><span class="nv">this</span><span class="p">](</span><span class="sx">https://example.com</span><span class="p">)</span> etc.<br><br>Describe everything you want to convey here, can be as long as you<br>need.<br></code></pre></div></div>  <p>Make sure the filename is structured as follows: <code class="language-plaintext highlighter-rouge">year-month-day-title.md</code>, so for example: <code class="language-plaintext highlighter-rouge">2022-10-28-my-new-tutorial.md</code></p></blockquote>
+
+
+
+
 <h4 class="faq-area"> How can I contribute in "advanced" mode? <a href="/training-material/faqs/gtn/contributors_git_advanced.html"><i class="fas fa-external-link-alt"></i></a> </h4>
 
 <!--SNIPPET--><blockquote class="tip">  <div id="tip-how-can-i-contribute-in-quot-advanced-quot-mode" class="box-title"><button type="button" aria-controls="tip-how-can-i-contribute-in-quot-advanced-quot-mode-contents" aria-expanded="true" aria-label="Toggle tip box: How can I contribute in &quot;advanced&quot; mode?"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: How can I contribute in &quot;advanced&quot; mode?<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>Most of the content is written in <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown</a> with some metadata (or variables) found in <a href="http://yaml.org/">YAML</a> files. Everything is stored on our <a href="https://github.com/galaxyproject/training-material">GitHub repository</a>. Each training material is related to a topic. All training materials (slides, tutorials, etc) related to a topic are found in a dedicated directory (<em>e.g.</em> <code class="language-plaintext highlighter-rouge">transcriptomics</code> directory contains the material related to transcriptomic analysis). Each topic has the following structure:</p>  <p><img src="/training-material/shared/images/repo_organization.png" alt="Structure of the repository" width="400px" /></p>  <ul>  <li>a metadata file in YAML format</li>  <li>a directory with the topic introduction slide deck in Markdown with introductions to the topic</li>  <li>    <p>a directory with the tutorials:</p>    <p>Inside the tutorials directory, each tutorial related to the topic has its own subdirectory with several files:</p>    <ul>      <li>a tutorial file written in Markdown with hands-on</li>      <li>an optional slides file in Markdown with slides to support the tutorial</li>      <li>a directory with <span class="notranslate">Galaxy</span> Interactive Tours to reproduce the tutorial</li>      <li>a directory with workflows extracted from the tutorial</li>      <li>a YAML file with the links to the input data needed for the tutorial</li>      <li>a YAML file with the description of needed tools to run the tutorial</li>    </ul>  </li>  <li>a directory with the Dockerfile describing the details to build a container for the topic (self-study environments).</li></ul>  <p>To manage changes, we use <a href="https://guides.github.com/introduction/flow/">GitHub flow</a> based on Pull Requests (check our <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">tutorial</a>):</p>  <ol>  <li><a href="https://help.github.com/articles/fork-a-repo/">Create a fork</a> of this repository on GitHub</li>  <li>Clone your fork of this repository to create a local copy on your computer and initialize the required submodules (<code class="language-plaintext highlighter-rouge">git submodule init</code> and <code class="language-plaintext highlighter-rouge">git submodule update</code>)</li>  <li>Create a new branch in your local copy for each significant change</li>  <li>Commit the changes in that branch</li>  <li>Push that branch to your fork on GitHub</li>  <li>Submit a pull request from that branch to the <a href="https://github.com/galaxyproject/training-material">original repository</a></li>  <li>If you receive feedback, make changes in your local clone and push them to your branch on GitHub: the pull request will update automatically</li>  <li>Pull requests will be merged by the training team members after at least one other person has reviewed the Pull request and approved it.</li></ol>  <p>Globally, the process of development of new content is open and transparent:</p>  <ol>  <li>Creation of a branch derived from the main branch of the GitHub repository</li>  <li>Initialization of a new directory for the tutorial</li>  <li>Filling of the metadata with title, questions, learning objectives, etc</li>  <li>Generation of the input dataset for the tutorial</li>  <li>Filling of the tutorial content</li>  <li>Extraction of the workflows of the tutorial</li>  <li>Automatic extraction of the required tools to populate the tool file</li>  <li>Automatic annotation of the public <span class="notranslate">Galaxy</span> servers</li>  <li>Generation of an interactive tour for the tutorial with the <a href="https://tailordev.fr/blog/2017/07/19/the-galaxy-tour-builder-extension/">Tourbuilder</a> web-browser extension</li>  <li>Upload of the datasets to Zenodo and addition of the links in the data library file.</li>  <li>Once ready, opening a Pull Request</li>  <li>Automatic checks of the changes are automatically checked for the right format and working links using continuous integration testing on Travis CI</li>  <li>Review of the content by several other instructors via discussions</li>  <li>After the review process, merge of the content into the main branch, starting a series of automatic steps triggered by Travis CI</li>  <li>Regeneration of the website and publication on <a href="/training-material/">https://training.<span class="notranslate">galaxy</span>project.org/training-material/</a></li>  <li>Generation of PDF artifacts of the tutorials and slides and upload on the FTP server</li>  <li>Population of <a href="https://tess.elixir-europe.org/">TeSS</a>, the ELIXIR’s Training Portal, via the metadata</li></ol>  <p><img src="/training-material/shared/images/development_process.png" alt="Development process" /></p>  <p>To learn how to add new content, check out our <a href="/training-material/topics/contributing/">series of tutorials on creating new content</a>:</p>  <ol>   <li><a href="/training-material/topics/contributing/slides/introduction.html">Overview of the <span class="notranslate">Galaxy</span> Training Material</a></li>       <li><a href="/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html">Adding auto-generated video to your slides</a></li>          <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-quiz/tutorial.html">Adding Quizzes to your Tutorial</a></li>          <li><a href="/training-material/topics/contributing/tutorials/github-command-line-contribution/tutorial.html">Contributing with GitHub via command-line</a></li>          <li><a href="/training-material/topics/contributing/tutorials/github-interface-contribution/tutorial.html">Contributing with GitHub via its interface</a></li>          <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html">Creating a new tutorial</a></li>          <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">Creating content in Markdown</a></li>          <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.html">Creating Interactive <span class="notranslate">Galaxy</span> Tours</a></li>          <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-slides/slides.html">Creating Slides</a></li>           <li><a href="/training-material/topics/contributing/tutorials/design/tutorial.html">Design and plan session, course, materials</a></li>          <li><a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html">Generating PDF artefacts of the website</a></li>          <li><a href="/training-material/topics/contributing/tutorials/schemas/tutorial.html">GTN Metadata</a></li>          <li><a href="/training-material/topics/contributing/tutorials/create-new-topic/tutorial.html">Including a new topic</a></li>          <li><a href="/training-material/topics/contributing/tutorials/learning-principles/tutorial.html">Principles of learning and how they apply to training and teaching</a></li>          <li><a href="/training-material/topics/contributing/tutorials/running-jekyll/tutorial.html">Running the GTN website locally</a></li>          <li><a href="/training-material/topics/contributing/tutorials/gitpod/tutorial.html">Running the GTN website online using GitPod</a></li>          <li><a href="/training-material/topics/contributing/tutorials/python/tutorial.html">Teaching Python</a></li>          <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html">Tools, Data, and Workflows for tutorials</a></li>          <li><a href="/training-material/topics/contributing/tutorials/admin-knitting/tutorial.html">Updating diffs in admin training</a></li>      </ol>  <p>We also strongly recommend you read and follow <a href="https://carpentries.org/">The Carpentries</a> recommendations on <a href="https://carpentries.github.io/lesson-example/01-design/">lesson design</a> and <a href="https://carpentries.github.io/instructor-training/15-lesson-study/">lesson writing</a> if you plan to add or change some training materials, and also to check the structure of the training material above.</p></blockquote>
@@ -1356,6 +1359,13 @@ Contributing to <span class="notranslate">Galaxy</span> is a multi-step process,
 <h4 class="faq-area"> Importing data from a data library <a href="/training-material/faqs/galaxy/datasets_import_from_data_library.html"><i class="fas fa-external-link-alt"></i></a> </h4>
 
 <!--SNIPPET--><blockquote class="tip">  <div id="tip-importing-data-from-a-data-library" class="box-title"><button type="button" aria-controls="tip-importing-data-from-a-data-library-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from a data library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+
+
+
+
+<h4 class="faq-area"> Importing data from remote files <a href="/training-material/faqs/galaxy/datasets_import_from_remote_files.html"><i class="fas fa-external-link-alt"></i></a> </h4>
+
+<!--SNIPPET--><blockquote class="tip">  <div id="tip-importing-data-from-remote-files" class="box-title"><button type="button" aria-controls="tip-importing-data-from-remote-files-contents" aria-expanded="true" aria-label="Toggle tip box: Importing data from remote files"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from remote files<span role="button" class="fold-unfold fa fa-minus-square"></span></button></div>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>Choose remote files</em>:</p>  <ol>  <li>Click on <strong>Upload Data</strong> on the top of the left panel</li>  <li>    <p>Click on <strong>Choose remote files</strong> and scroll down to find your data folder or type the folder name in the <code class="language-plaintext highlighter-rouge">search box</code> on the top.</p>  </li>  <li>click on <strong>OK</strong></li>  <li>Click on <strong>Start</strong></li>  <li>Click on <strong>Close</strong></li>  <li>You can find the dataset has begun loading in you history.</li></ol></blockquote>
 
 
 
@@ -2307,7 +2317,7 @@ Undelete your deleted histories
 
 <h4 class="faq-area"> GTN Stats <a href="/training-material/faqs/gtn/gtn_stats.html"><i class="fas fa-external-link-alt"></i></a> </h4>
 
-<!--SNIPPET--><!-- tutorial stats --><div class="row"><div class="col-md-4"> <div class="gtn-card color-agenda">   <div class="card-title">29</div>   <div class="card-text">Topics</div> </div></div><div class="col-md-4"> <div class="gtn-card color-tip">   <div class="card-title">297</div>   <div class="card-text">Tutorials</div> </div></div><div class="col-md-4"> <div class="gtn-card color-details">   <div class="card-title">354</div>   <div class="card-text"><abbr title="Frequently Asked Questions">FAQs</abbr></div> </div></div><div class="col-md-6"> <div class="gtn-card color-comment">   <div class="card-title">279</div>   <div class="card-text">Contributors</div> </div></div><div class="col-md-6"> <div class="gtn-card color-handson">   <div class="card-title">7.4</div>   <div class="card-text">Years</div> </div></div></div>
+<!--SNIPPET--><!-- tutorial stats --><div class="row"><div class="col-md-4"> <div class="gtn-card color-agenda">   <div class="card-title">29</div>   <div class="card-text">Topics</div> </div></div><div class="col-md-4"> <div class="gtn-card color-tip">   <div class="card-title">301</div>   <div class="card-text">Tutorials</div> </div></div><div class="col-md-4"> <div class="gtn-card color-details">   <div class="card-title">356</div>   <div class="card-text"><abbr title="Frequently Asked Questions">FAQs</abbr></div> </div></div><div class="col-md-6"> <div class="gtn-card color-comment">   <div class="card-title">280</div>   <div class="card-text">Contributors</div> </div></div><div class="col-md-6"> <div class="gtn-card color-handson">   <div class="card-title">7.4</div>   <div class="card-text">Years</div> </div></div></div>
 
 
 
@@ -3154,44 +3164,44 @@ add a button, include configuration options:
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/6dd4e11c7f443b191ea3da6dbd3a0c72d33db220">6dd4e11c7f443b191ea3da6dbd3a0c72d33db220</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/347e5e1afaf89ae1126d891686b9fd53ad368751">347e5e1afaf89ae1126d891686b9fd53ad368751</a></p>
     </div>
 </footer>
 
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

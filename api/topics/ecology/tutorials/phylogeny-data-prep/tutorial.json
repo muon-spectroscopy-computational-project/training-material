@@ -28,6 +28,11 @@
     "Find orthologs across different samples with **orthofinder**",
     "Align orthologs with **ClustalW** in preparation for phylogeny reconstruction <!-- link to phylogeny reconstruction training. -->"
   ],
+  "tags": [
+    "phylogeny",
+    "data handling",
+    "functional annotation"
+  ],
   "contributors": [
     {
       "name": "Miguel Roncoroni",
@@ -44,7 +49,6 @@
       "url": "https://training.galaxyproject.org/training-material/api/contributors/brigidagallone.json"
     }
   ],
-  "last_modified_at": "2022-10-24T13:16:25+00:00",
   "url": "/topics/ecology/tutorials/phylogeny-data-prep/tutorial.html",
   "topic_name": "ecology",
   "tutorial_name": "phylogeny-data-prep"

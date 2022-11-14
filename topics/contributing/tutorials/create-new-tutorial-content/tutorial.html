@@ -24,7 +24,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Creating content in Markdown" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:42 +0000" />
+<meta name="DC.date" content="2022-11-01 13:10:44 +0000" />
 <meta name="DC.creator" content="Bérénice Batut" />
 <meta name="DC.creator" content="Helena Rasche" />
 
@@ -148,12 +148,12 @@
 
         <!-- link to feedback -->
         
-        
-        
-        
-            <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
-                <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
-            </a>
+            
+            
+                <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
+                    <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
+                </a>
+            
         
 
         <div class="dropdown-item">
@@ -192,7 +192,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html" title="Version 2022-03-01">2022-03-01</a>
@@ -279,7 +278,7 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "1970-01-01 00:33:42 +0000",
+  "dateModified": "2022-11-01 13:10:44 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Creating content in Markdown",
   "interactivityType": "mixed",
@@ -333,7 +332,7 @@
   "url": "https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html",
   "timeRequired": "PT15M",
   "keywords": "contributing",
-  "description": "The questions this  addresses are:\n - How to write a tutorial with hands-on?\n - What are the different boxes?\n - How can I add a caption to an image?\n\n\\nThe objectives are:\n - Create hands-on\n - Use the different boxes\n\n",
+  "description": "The questions this  addresses are:\n - How to write a tutorial with hands-on?\n - What are the different boxes?\n - How can I add a caption to an image?\n\n\nThe objectives are:\n - Create hands-on\n - Use the different boxes\n\n",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
@@ -521,7 +520,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Oct 21, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Nov 1, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -5790,7 +5789,7 @@ This can be avoided by using the <code class="language-plaintext highlighter-rou
 
 <p>There is no need to fill out the list; this will be done automatically based off of your tutorial’s section titles. First and second level headings (lines starting with <code class="language-plaintext highlighter-rouge">#</code> and <code class="language-plaintext highlighter-rouge">##</code> in markdown) will be shown in the agenda.</p>
 
-<p>To avoid adding a particular section in the agenda, you can add <code class="language-plaintext highlighter-rouge">{:.no_toc}</code> below the section name. However, it is not recommended to use this too often; if a section is not important enough to be shown in the agenda, consider making it a third-level heading (<code class="language-plaintext highlighter-rouge">###</code>) instead.</p>
+<p>If a section is not important enough to be shown in the agenda, consider making it a third-level heading (<code class="language-plaintext highlighter-rouge">###</code>) instead.</p>
 
 <p>The agenda will be rendered as follows:</p>
 
@@ -6593,6 +6592,8 @@ With well chosen wrong answers, MCQs can do much more than just measure how much
 
 		
 	
+		
+	
 
 	
 	
@@ -6728,6 +6729,62 @@ With well chosen wrong answers, MCQs can do much more than just measure how much
 
 		
 	
+		
+	
+		
+			
+			
+			
+
+			<blockquote class="tip">
+
+	<div class="box-title">
+		
+		<button type="button" aria-expanded="true" aria-label="Toggle tip box: redirect_from">
+			<i class="far fa-lightbulb" aria-hidden="true"></i>
+			
+				<code>redirect_from</code>
+			
+			<span role="button" class="fold-unfold fa fa-plus-square"></span>
+		</button>
+		
+	</div>
+
+<b>List of Items</b>
+
+<p>
+<p>If a tutorial is renamed to a new location, use this field to list prior locations from which this tutorial was accessible.</p>
+
+</p>
+
+
+
+
+
+
+
+
+<p>
+	<b>Example(s)</b><div>
+        <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">redirect_from</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">/topics/sequence-analysis/tutorials/de-novo-rad-seq/tutorial</span>
+</code></pre></div>        </div>
+      </div></p>
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+</blockquote>
+
 		
 	
 		
@@ -7478,7 +7535,7 @@ The `/jobs` &lbrace;API&rbrace; will return &lbrace;JSON&rbrace;. When we call t
 </blockquote>
 
 <blockquote class="notranslate hands_on gtn-cyoa" id="gtn-cyoa">
-  <h3><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Choose Your Own Tutorial</h3>
+	<div class="box-title" aria-label="hands-on box: choose your own tutorial"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Choose Your Own Tutorial</div>
 	<p>This is a "Choose Your Own Tutorial" section, where you can select between multiple paths. Click one of the buttons below to select how you want to follow the tutorial</p>
 	
 	<p>
@@ -8004,6 +8061,8 @@ switch pages.</p>
 
 <h1 id="conclusion">Conclusion</h1>
 
+<p>If you have created a new tutorial, please also consider writing a <a href="/training-material/faqs/gtn/gtn_news_create_post.html">GTN news post</a> about it to let people know about it (and make it easy for us to tweet about)!</p>
+
 <h2 id="footnotes-rendered">Footnotes (Rendered)</h2>
 
 <script type="text/javascript">
@@ -8104,7 +8163,8 @@ document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagNa
                 <h1>Citing this Tutorial</h1>
                 <p>
                     <ol>
-                        <li id="citation-text">, 2022 <b>Creating content in Markdown (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html</a> Online; accessed TODAY
+                        <li id="citation-text">
+                            Bérénice Batut, Helena Rasche,  <b>Creating content in Markdown (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -8125,12 +8185,13 @@ document.getElementsByTagName("body")[0].innerHTML = document.getElementsByTagNa
 
                    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
 
+
 <code id="citation-code">@misc{contributing-create-new-tutorial-content,
 author = "Bérénice Batut and Helena Rasche",
 title = "Creating content in Markdown (Galaxy Training Materials)",
-year = "2022",
-month = "10",
-day = "21"
+year = "",
+month = "",
+day = ""
 url = "\url{https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }
@@ -8339,39 +8400,39 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
 
         </div>
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

@@ -1131,7 +1131,7 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/mariecrane.json"
   },
   {
-    "name": "Marie",
+    "name": "Marie Josse",
     "joined": "2022-03",
     "id": "Marie59",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/Marie59.json"
@@ -1530,6 +1530,12 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/pvanheus.json"
   },
   {
+    "name": "Soumya Jha",
+    "joined": "2022-06",
+    "id": "Quickbeasts51429",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/Quickbeasts51429.json"
+  },
+  {
     "name": "Ryan Abernathey",
     "twitter": "rabernat",
     "orcid": "0000-0001-5999-4917",
@@ -1821,6 +1827,9 @@
   },
   {
     "name": "Torfinn Nome",
+    "email": "torfinn.nome@gmail.com",
+    "twitter": "torfinnnome",
+    "orcid": "0000-0003-1659-132X",
     "joined": "2021-01",
     "elixir_node": "no",
     "id": "torfinnnome",
