@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -6,45 +6,92 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>GTN Contributor: Cristóbal Gallardo</title>
         
-            <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+            <meta name="google-site-verification" content="9mOXn2JL833-i7-aioCCEuIdG4_tb6qjwUozB5GJnPQ" />
+
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+if(localStorage.getItem('sentry-opt-out') !== 'opt-out' && navigator.doNotTrack !== "1") {
+	console.log("Sentry: opt-in");
+	Sentry.init({
+		dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+		release: "galaxy-training-network@690a538a6e13d280924672042e711ddad4402bab",
+		integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+		sampleRate: 0.1,
+		tracesSampleRate: 0.1,
+		// Capture Replay for no sessions by default
+		replaysSessionSampleRate: 0.01,
+		// plus for 1% of sessions with an error
+		replaysOnErrorSampleRate: 0.01,
+		// PII OFF
+		sendDefaultPii: false, // Off by default but just in case.
+		environment: "production",
+	});
+}
+</script>
+
+<!-- Page view tracking -->
+<script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
+<script>
+if(localStorage.getItem('plausible-opt-out') !== 'opt-out' && navigator.doNotTrack !== "1") {
+	localStorage.removeItem("plausible_ignore")
+	console.log("Plausible: opt-in");
+} else {
+	// if they're opting-out, or DNT
+	// we might get one page by accident but we won't get future ones.
+	localStorage.setItem("plausible_ignore", "true")
+}
+</script>
 
         
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
-        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
-        <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
-        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
-        <link rel="canonical" href="https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/" />
-        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+        <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/">
+        <link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2" as="font" type="font/woff2" crossorigin>
+        
+        <link rel="preload" href="/training-material/assets/css/main.css?v=3" as="style">
+        <link rel='preload' href='/training-material/assets/js/bundle.f1f2de89.js?v=1700124870' as='script'>
+<link rel='preload' href='/training-material/assets/js/bundle.9d052497.js?v=1700124870' as='script'>
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=3">
+        <link rel="manifest" href="/training-material/manifest.json">
+        <meta name="theme-color" content="#2c3143"/>
 
-        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material" />
-<meta name="DC.type" content="text" />
-<meta name="DC.title" content="GTN Contributor: Cristóbal Gallardo" />
-<meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:00:00 +0000" />
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
+<meta name="DC.type" content="text">
+<meta name="DC.title" content="GTN Contributor: Cristóbal Gallardo">
+<meta name="DC.publisher" content="Galaxy Training Network">
+<meta name="DC.date" content="1970-01-01 00:00:00 +0000">
 
         
         
         
         
+        <meta name="description" content="Collection of tutorials developed and maintained by the worldwide Galaxy community">
+        <meta property="og:site_name" content="Galaxy Training Network">
+        <meta property="og:title" content="Galaxy Training: GTN Contributor: Cristóbal Gallardo">
+        <meta property="og:description" content="Collection of tutorials developed and maintained by the worldwide Galaxy community">
         
-        <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
-        <meta property="og:site_name" content="Galaxy Training Network" />
-        <meta property="og:title" content="Galaxy Training: GTN Contributor: Cristóbal Gallardo" />
-        <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
+        
     </head>
-    <body data-spy="scroll" data-target="#toc">
+    <body data-spy="scroll" data-target="#toc" data-brightness="auto" data-contrast="auto">
+        <script src='/training-material/assets/js/bundle.f1f2de89.js?v=1700124870'></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,38 +108,10 @@
                         
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                    <li class="nav-item">
+                        <a class="nav-link" href="/training-material/learning-pathways" title="Learning Pathways">
+                           <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Learning Pathways
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
-            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/gallardoalba/&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/gallardoalba/&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/gallardoalba/&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/gallardoalba/&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/gallardoalba/&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/hall-of-fame/gallardoalba/&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -108,7 +127,7 @@
         </form>
         -->
 
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+	<a class="dropdown-item" href="/training-material/faqs/index.html" title="Check our FAQs">
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
@@ -128,8 +147,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/hall-of-fame/gallardoalba/" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/hall-of-fame/gallardoalba/index.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -148,36 +166,9 @@
             </a>
         
 
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
-            </div>
-
-            <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
-            </div>
-
-        </div>
+		<a href="/training-material/preferences.html" class="dropdown-item">
+			<i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> User Preferences <span class="badge badge-secondary">New</span>
+		</a>
 
         <div class="dropdown-item">
             <div>
@@ -186,13 +177,13 @@
 
             <div id="archive-selector">
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/hall-of-fame/gallardoalba/" title="Version 2022-03-01">2022-03-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/hall-of-fame/gallardoalba/">2022-03-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/hall-of-fame/gallardoalba/" title="Version 2022-02-01">2022-02-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/hall-of-fame/gallardoalba/">2022-02-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/hall-of-fame/gallardoalba/" title="Version 2022-01-01">2022-01-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/hall-of-fame/gallardoalba/">2022-01-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/">Older Versions</a>
             </div>
 
         </div>
@@ -205,7 +196,7 @@
                     <li class="nav-item">
                       <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search2">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
                           <div class="md-form mb-2">
                             <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
@@ -219,17 +210,18 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         
 
+
 <script type="application/ld+json">
-	
 	{
   "@context": "https://schema.org",
   "@type": "Person",
   "http://purl.org/dc/terms/conformsTo": {
-    "@id": "https://bioschemas.org/profiles/Person/0.2-DRAFT-2019_07_19",
-    "@type": "Person"
+    "@id": "https://bioschemas.org/profiles/Person/0.3-DRAFT",
+    "@type": "CreativeWork"
   },
   "url": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
   "mainEntityOfPage": "https://training.galaxyproject.org/training-material/hall-of-fame/gallardoalba/",
@@ -241,9 +233,12 @@
       "@type": "Organization",
       "email": "galaxytrainingnetwork@gmail.com",
       "name": "Galaxy Training Network",
-      "url": "https://galaxyproject.org/teach/gtn/"
+      "url": "https://training.galaxyproject.org",
+      "logo": "https://training.galaxyproject.org/training-material/assets/images/GTNLogo1000.png"
     }
-  ]
+  ],
+  "identifier": "https://orcid.org/0000-0002-5752-2155",
+  "orcid": "https://orcid.org/0000-0002-5752-2155"
 }
 </script>
 
@@ -253,106 +248,78 @@
 }
 
 </style>
-<section>
+<section class="contributor-page contributor-gallardoalba">
 	<div class="stats">
 		<div class="row">
-
-			<div class="col-md-3">
-				
-					<img src="https://avatars.githubusercontent.com/gallardoalba" alt="github avatar" >
-				
-
-				<h3>
-					Cristóbal Gallardo
-				</h3>
-                
-
-				
-
-				
-				<div class="contact-items">
-					<a title="GitHub" href="https://github.com/gallardoalba">
-						<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> gallardoalba
-					</a>
-				</div>
-				
-
-				
-
-				
-
-				
-
-				
-
-				
-
-				
-				<div class="contact-items">
-					<img src="/training-material/assets/images/elixir/elixir-de.svg" alt="elixir logo for Germany">
-				</div>
-				
-
-				<h4>Favourite Topics</h4>
-				<canvas id="myChart" height="300px"></canvas>
-				<h4>Favourite Formats</h4>
-				<canvas id="slidesVsTutorials" height="300px"></canvas>
-
-			</div>
-
 			<div class="col-md-9">
-				<h1>Contributions</h1>
+				<hgroup>
+					<h1>
+						Cristóbal Gallardo
+					</h1>
+				
+				</hgroup>
+
+				
+
+				
+				
+
+				
+				
+
+				
+				
+
+				<h2>Contributions</h2>
+
+				
 
 				<p class="text-muted">
-					
 					The following list includes only slides and tutorials where the individual has been added to the contributor list. This may not include the sum total of their contributions to the training materials (e.g. GTN css or design, tutorial datasets, workflow development, etc.) unless described by a news post.
-					
 
                 
                 <br><br>
-                <h2> GitHub Activity</h2>
+		
+                <h3> GitHub Activity</h4>
                 <ul>
                   <li><a href="https://github.com/galaxyproject/training-material/pulls?q=is%3Apr+author%3Agallardoalba"><i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Pull Requests</a> </li>
                   <li><a href="https://github.com/galaxyproject/training-material/commits?author=gallardoalba"><i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Commits</a></li>
                   <li><a href="https://github.com/galaxyproject/training-material/issues?q=+is%3Aissue+author%3Agallardoalba"><i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Issues Reported</a></li>
                 </ul>
                 
+		
                 </p>
+				
+				<h3>Editorial Roles</h3>
+				<p>This contributor has taken on additional responsibilities as an editor for the following topics. They are responsible for ensuring that the content is up to date, accurate, and follows GTN best practices.</p>
+				<ul>
+				
+					<li>
+						
+						<a href="/training-material/topics/assembly">Assembly</a>
+						
+					</li>
+				
+				</ul>
+				
 
 				
-				<h2>Tutorials</h2>
+				<h3>Tutorials</h3>
 				<ul>
 				
 					<li>
 						
 						
-						<a href="/training-material/topics/transcriptomics">
-							Transcriptomics
+						<a href="/training-material/topics/galaxy-interface">
+							Using Galaxy and Managing your Data
 						</a>
 						/
-						<a href="/training-material//topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html">
-						Whole transcriptome analysis of Arabidopsis thaliana
+						<a href="/training-material//topics/galaxy-interface/tutorials/history/tutorial.html">
+						Understanding Galaxy history system
 						</a>
 						
 						
-	
-
-
-					</li>
-				
-					<li>
-						
-						
-						<a href="/training-material/topics/transcriptomics">
-							Transcriptomics
-						</a>
-						/
-						<a href="/training-material//topics/transcriptomics/tutorials/scrna-plant/tutorial.html">
-						Analysis of plant scRNA-Seq Data with Scanpy
-						</a>
-						
-						
-	
+	<abbr title="This person edited the text, either for spelling and grammar, flow, GTN-fit, or other similar editing categories">📝</abbr>
 
 
 					</li>
@@ -366,6 +333,23 @@
 						/
 						<a href="/training-material//topics/metagenomics/tutorials/nanopore-16S-metagenomics/tutorial.html">
 						16S Microbial analysis with Nanopore data
+						</a>
+						
+						
+	
+
+
+					</li>
+				
+					<li>
+						
+						
+						<a href="/training-material/topics/assembly">
+							Assembly
+						</a>
+						/
+						<a href="/training-material//topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+						VGP assembly pipeline - short version
 						</a>
 						
 						
@@ -398,12 +382,29 @@
 							Assembly
 						</a>
 						/
-						<a href="/training-material//topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-						VGP assembly pipeline - short version
+						<a href="/training-material//topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+						ERGA post-assembly QC
 						</a>
 						
 						
 	
+
+
+					</li>
+				
+					<li>
+						
+						
+						<a href="/training-material/topics/contributing">
+							Contributing to the Galaxy Training Material
+						</a>
+						/
+						<a href="/training-material//topics/contributing/tutorials/learning-principles/tutorial.html">
+						Principles of learning and how they apply to training and teaching
+						</a>
+						
+						
+	<abbr title="This person wrote the bulk of the training material, they may have done the analysis, built the workflow, and wrote the text themselves.">✍️</abbr>
 
 
 					</li>
@@ -417,6 +418,57 @@
 						/
 						<a href="/training-material//topics/introduction/tutorials/galaxy-intro-strands/tutorial.html">
 						Introduction to Genomics and Galaxy
+						</a>
+						
+						
+	
+
+
+					</li>
+				
+					<li>
+						
+						
+						<a href="/training-material/topics/single-cell">
+							Single Cell
+						</a>
+						/
+						<a href="/training-material//topics/single-cell/tutorials/scrna-plant/tutorial.html">
+						Analysis of plant scRNA-Seq Data with Scanpy
+						</a>
+						
+						
+	
+
+
+					</li>
+				
+					<li>
+						
+						
+						<a href="/training-material/topics/transcriptomics">
+							Transcriptomics
+						</a>
+						/
+						<a href="/training-material//topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+						Genome-wide alternative splicing analysis
+						</a>
+						
+						
+	<abbr title="This person wrote the bulk of the training material, they may have done the analysis, built the workflow, and wrote the text themselves.">✍️</abbr>
+
+
+					</li>
+				
+					<li>
+						
+						
+						<a href="/training-material/topics/transcriptomics">
+							Transcriptomics
+						</a>
+						/
+						<a href="/training-material//topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html">
+						Whole transcriptome analysis of Arabidopsis thaliana
 						</a>
 						
 						
@@ -446,18 +498,18 @@
 				
 
 				
-				<h2>Slides</h2>
+				<h3>Slides</h3>
 				<ul>
 				
 					<li>
 						
 						
-						<a href="/training-material/topics/transcriptomics">
-							Transcriptomics
+						<a href="/training-material/topics/sequence-analysis">
+							Sequence analysis
 						</a>
 						/
-						<a href="/training-material//topics/transcriptomics/tutorials/mirna-target-finder/slides.html">
-						Whole transcriptome analysis of Arabidopsis thaliana
+						<a href="/training-material//topics/sequence-analysis/tutorials/mapping/slides.html">
+						Mapping
 						</a>
 						
 						
@@ -486,12 +538,29 @@
 					<li>
 						
 						
-						<a href="/training-material/topics/sequence-analysis">
-							Sequence analysis
+						<a href="/training-material/topics/transcriptomics">
+							Transcriptomics
 						</a>
 						/
-						<a href="/training-material//topics/sequence-analysis/tutorials/mapping/slides.html">
-						Mapping
+						<a href="/training-material//topics/transcriptomics/tutorials/differential-isoform-expression/slides.html">
+						Identification of non-canonical ORFs and their potential biological function
+						</a>
+						
+						
+	
+
+
+					</li>
+				
+					<li>
+						
+						
+						<a href="/training-material/topics/transcriptomics">
+							Transcriptomics
+						</a>
+						/
+						<a href="/training-material//topics/transcriptomics/tutorials/mirna-target-finder/slides.html">
+						Whole transcriptome analysis of Arabidopsis thaliana
 						</a>
 						
 						
@@ -504,11 +573,85 @@
 				
 
 				
-                <h2>News</h2>
+
+
+				
+                <h3>News</h3>
                 <div class="newslist">
                 
                 
-                   
+                   <article>
+
+
+
+
+<div class="card newsitem">
+ <div class="card-header">
+     <a href="/training-material/news/2023/05/15/isoform-usage-training.html"><h3 class="card-title">New Galaxy training: Genome-wide alternative splicing analysis</h3></a>
+  </div>
+ <div class="row no-gutters">
+  <div class="col-sm-5">
+   <img class="card-img newscover" src="/training-material/news/images/isoform_usage_post.jpg" alt="Schematic of an isoform switch and detection pipeline. Data is annotated and a prediction is made for isoform switch consequences" loading="lazy">
+  </div>
+  <div class="col-sm-7">
+   <div class="card-body">
+        <!--<a href="/training-material/news/2023/05/15/isoform-usage-training.html"><h4 class="card-title">New Galaxy training: Genome-wide alternative splicing analysis</h4></a>-->
+        <div class="text-muted">
+        15 May 2023
+        </div>
+        <div markdown="0">
+
+	<div class="contributors-line">
+		
+<table class="contributions">
+	
+	<tr>
+		<td><abbr title="These people wrote the bulk of the tutorial, they may have done the analysis, built the workflow, and wrote the text themselves.">Author(s)</abbr></td>
+		<td>
+			<a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=36" alt="Cristóbal Gallardo avatar" width="36" class="avatar" />
+    Cristóbal Gallardo</a>
+		</td>
+	</tr>
+	
+
+
+	
+
+	
+
+	
+
+	
+
+	
+</table>
+
+
+	</div>
+
+</div>
+
+
+        
+<span class="label label-default tutorial_tag" style="--color-primary: #ffa91e; --color-darker: #e59600; --color-dimmed: #f39f00;">new tutorial</span>
+
+    <hr/>
+    <p class="card-text">
+      
+        The GTN hosts a new training for analyzing alternative splicing at genome-wide scale!
+
+      
+    </p>
+    <a href="/training-material/news/2023/05/15/isoform-usage-training.html" class="btn btn-primary">Full Story</a>
+   </div>
+  </div>
+ </div>
+</div>
+</article>
+
+                
+                   <article>
+
 
 
 
@@ -529,17 +672,31 @@
         <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
+		
+<table class="contributions">
+	
+	<tr>
+		<td><abbr title="These people wrote the bulk of the tutorial, they may have done the analysis, built the workflow, and wrote the text themselves.">Author(s)</abbr></td>
+		<td>
+			<a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=36" alt="Cristóbal Gallardo avatar" width="36" class="avatar" />
+    Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/delphine-l/" class="contributor-badge contributor-delphine-l"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/delphine-l?s=36" alt="Delphine Lariviere avatar" width="36" class="avatar" />
+    Delphine Lariviere</a><a href="/training-material/hall-of-fame/astrovsky01/" class="contributor-badge contributor-astrovsky01"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/astrovsky01?s=36" alt="Alex Ostrovsky avatar" width="36" class="avatar" />
+    Alex Ostrovsky</a>
+		</td>
+	</tr>
+	
 
 
+	
 
-<a href="/training-material/hall-of-fame/delphine-l/" class="contributor-badge contributor-delphine-l"><img src="https://avatars.githubusercontent.com/delphine-l?s=27" alt="Avatar">Delphine Lariviere</a>
+	
 
+	
 
+	
 
-<a href="/training-material/hall-of-fame/astrovsky01/" class="contributor-badge contributor-astrovsky01"><img src="https://avatars.githubusercontent.com/astrovsky01?s=27" alt="Avatar">Alex Ostrovsky</a>
-
+	
+</table>
 
 
 	</div>
@@ -548,16 +705,18 @@
 
 
         
-<button class="label label-default tutorial_tag" id="new tutorial" style="background-color: hsl(46, 80.0%, 85%); color: #333; border: 1px solid hsl(46, 80.0%, 45%)" title="Click to show all tutorials with this tag">new tutorial</button>
+<span class="label label-default tutorial_tag" style="--color-primary: #ffa91e; --color-darker: #e59600; --color-dimmed: #f39f00;">new tutorial</span>
 
-<button class="label label-default tutorial_tag" id="assembly" style="background-color: hsl(334, 80.0%, 85%); color: #333; border: 1px solid hsl(334, 80.0%, 45%)" title="Click to show all tutorials with this tag">assembly</button>
+<span class="label label-default tutorial_tag" style="--color-primary: #ff9cd4; --color-darker: #ff76c9; --color-dimmed: #ff8acf;">assembly</span>
 
-<button class="label label-default tutorial_tag" id="pacbio" style="background-color: hsl(337, 80.0%, 85%); color: #333; border: 1px solid hsl(337, 80.0%, 45%)" title="Click to show all tutorials with this tag">pacbio</button>
+<span class="label label-default tutorial_tag" style="--color-primary: #ff9dd1; --color-darker: #ff77c4; --color-dimmed: #ff8bca;">pacbio</span>
+
+<span class="label label-default tutorial_tag" style="--color-primary: #ff9ae5; --color-darker: #ff71df; --color-dimmed: #ff87e2;">vgp</span>
 
     <hr/>
     <p class="card-text">
       
-        We are proud to announce that, as result of the collaboration with the Vertebrate Genomes Project (VGP), a new training describing the VGP assembly pipeline (fig. 1) is now available in the Galaxy Training Network. The Vertebrate Genomes Project aims to generate high-quality, near-error-free, gap-free, chromosome-level, haplotype-phased, annotated reference genome assemblies for every vertebrate species.
+        We are proud to announce that, as result of the collaboration with the Vertebrate Genomes Project (VGP), a new training describing the VGP assembly pipeline is now available in the Galaxy Training Network. The Vertebrate Genomes Project aims to generate high-quality, near-error-free, gap-free, chromosome-level, haplotype-phased, annotated reference genome assemblies for every vertebrate species.
 
       
     </p>
@@ -566,10 +725,11 @@
   </div>
  </div>
 </div>
-
+</article>
 
                 
-                   
+                   <article>
+
 
 
 
@@ -579,7 +739,7 @@
   </div>
  <div class="row no-gutters">
   <div class="col-sm-5">
-   <img class="card-img newscover" src="/training-material/topics/transcriptomics/images/plant_mirna_synthesis.png" alt="Biosynthesis of miRNA in plants" loading="lazy">
+   <img class="card-img newscover" src="/training-material/topics/transcriptomics/images/transcriptomics_images/plant_mirna_synthesis.png" alt="Biosynthesis of miRNA in plants" loading="lazy">
   </div>
   <div class="col-sm-7">
    <div class="card-body">
@@ -590,17 +750,31 @@
         <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="https://avatars.githubusercontent.com/gallardoalba?s=27" alt="Avatar">Cristóbal Gallardo</a>
+		
+<table class="contributions">
+	
+	<tr>
+		<td><abbr title="These people wrote the bulk of the tutorial, they may have done the analysis, built the workflow, and wrote the text themselves.">Author(s)</abbr></td>
+		<td>
+			<a href="/training-material/hall-of-fame/gallardoalba/" class="contributor-badge contributor-gallardoalba"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/gallardoalba?s=36" alt="Cristóbal Gallardo avatar" width="36" class="avatar" />
+    Cristóbal Gallardo</a><a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/pavanvidem?s=36" alt="Pavankumar Videm avatar" width="36" class="avatar" />
+    Pavankumar Videm</a><a href="/training-material/hall-of-fame/beatrizserrano/" class="contributor-badge contributor-beatrizserrano"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/beatrizserrano?s=36" alt="Beatriz Serrano-Solano avatar" width="36" class="avatar" />
+    Beatriz Serrano-Solano</a>
+		</td>
+	</tr>
+	
 
 
+	
 
-<a href="/training-material/hall-of-fame/pavanvidem/" class="contributor-badge contributor-pavanvidem"><img src="https://avatars.githubusercontent.com/pavanvidem?s=27" alt="Avatar">Pavankumar Videm</a>
+	
 
+	
 
+	
 
-<a href="/training-material/hall-of-fame/beatrizserrano/" class="contributor-badge contributor-beatrizserrano"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/beatrizserrano?s=27" alt="Avatar">Beatriz Serrano-Solano</a>
-
+	
+</table>
 
 
 	</div>
@@ -609,13 +783,13 @@
 
 
         
-<button class="label label-default tutorial_tag" id="new tutorial" style="background-color: hsl(46, 80.0%, 85%); color: #333; border: 1px solid hsl(46, 80.0%, 45%)" title="Click to show all tutorials with this tag">new tutorial</button>
+<span class="label label-default tutorial_tag" style="--color-primary: #ffa91e; --color-darker: #e59600; --color-dimmed: #f39f00;">new tutorial</span>
 
-<button class="label label-default tutorial_tag" id="transcriptomics" style="background-color: hsl(78, 80.0%, 85%); color: #333; border: 1px solid hsl(78, 80.0%, 45%)" title="Click to show all tutorials with this tag">transcriptomics</button>
+<span class="label label-default tutorial_tag" style="--color-primary: #cebe00; --color-darker: #b8a900; --color-dimmed: #c3b300;">transcriptomics</span>
 
-<button class="label label-default tutorial_tag" id="plants" style="background-color: hsl(121, 80.0%, 85%); color: #333; border: 1px solid hsl(121, 80.0%, 45%)" title="Click to show all tutorials with this tag">plants</button>
+<span class="label label-default tutorial_tag" style="--color-primary: #60d500; --color-darker: #55bd00; --color-dimmed: #5bc900;">plants</span>
 
-<button class="label label-default tutorial_tag" id="mirna" style="background-color: hsl(329, 80.0%, 85%); color: #333; border: 1px solid hsl(329, 80.0%, 45%)" title="Click to show all tutorials with this tag">mirna</button>
+<span class="label label-default tutorial_tag" style="--color-primary: #ff9bdb; --color-darker: #ff75d2; --color-dimmed: #ff89d6;">mirna</span>
 
     <hr/>
     <p class="card-text">
@@ -629,14 +803,71 @@
   </div>
  </div>
 </div>
-
+</article>
 
                 
                 </div>
 				
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
 
-<script type="text/javascript">
+			</div>
+
+			<div class="col-md-3">
+				<div>
+					<img src="https://avatars.githubusercontent.com/gallardoalba?s=200" alt="Cristóbal Gallardo avatar" width="200" class="avatar" />
+				</div>
+
+				<h2>External Links</h2>
+				
+
+				
+				<div class="contact-items">
+					<a title="GitHub" href="https://github.com/gallardoalba">
+						<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> gallardoalba
+					</a>
+				</div>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+				<div class="contact-items">
+					<a title="ORCID" href="https://orcid.org/0000-0002-5752-2155">
+						<i class="fab fa-orcid" aria-hidden="true"></i><span class="visually-hidden">orcid</span> 0000-0002-5752-2155
+					</a>
+				</div>
+				
+
+				
+				<div class="contact-items">
+					<img src="/training-material/assets/images/elixir/elixir-de.svg" alt="elixir logo for Germany">
+				</div>
+				
+
+				<p>Favourite Topics</p>
+				<canvas id="myChart" height="300px"></canvas>
+				<p>Favourite Formats</p>
+				<canvas id="slidesVsTutorials" height="300px"></canvas>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<script src="/training-material/assets/js/Chart.bundle.js"></script>
+
+<script>
 const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 if(isReduced){
     Chart.defaults.global.animation.duration = 0;
@@ -649,11 +880,7 @@ var topics = [
 
 	
 	
-	"Transcriptomics",
-
-	
-	
-	"Transcriptomics",
+	"Using Galaxy and Managing your Data",
 
 	
 	
@@ -669,7 +896,27 @@ var topics = [
 
 	
 	
+	"Assembly",
+
+	
+	
+	"Contributing to the Galaxy Training Material",
+
+	
+	
 	"Introduction to Galaxy Analyses",
+
+	
+	
+	"Single Cell",
+
+	
+	
+	"Transcriptomics",
+
+	
+	
+	"Transcriptomics",
 
 	
 	
@@ -678,7 +925,7 @@ var topics = [
 
 	
 	
-	"Transcriptomics",
+	"Sequence analysis",
 
 	
 	
@@ -686,7 +933,11 @@ var topics = [
 
 	
 	
-	"Sequence analysis",
+	"Transcriptomics",
+
+	
+	
+	"Transcriptomics",
 
 ];
 
@@ -706,6 +957,17 @@ var slidesVsTutos = [
 
 	"Tutorials",
 
+	"Tutorials",
+
+	"Tutorials",
+
+	"Tutorials",
+
+	"Tutorials",
+
+
+	"Slides",
+	
 
 	"Slides",
 	
@@ -720,6 +982,9 @@ var slidesVsTutos = [
 	"News Posts",
 
 	"News Posts",
+
+	"News Posts",
+
 
 ]
 
@@ -787,66 +1052,47 @@ var chart2 = new Chart(ctx2, {
 		}
 	}
 });
-				</script>
+</script>
 
+        </div>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/690a538a6e13d280924672042e711ddad4402bab">690a538</a>, built with Jekyll (4.3.2 | production)
+				</p>
 			</div>
-
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					<i>This Material</i>:
+					
+					is licensed under
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/hall-of-fame/gallardoalba/index.html" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
 			</div>
 		</div>
 	</div>
-</section>
-
-        </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-        The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-        </p>
-
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/347e5e1afaf89ae1126d891686b9fd53ad368751">347e5e1afaf89ae1126d891686b9fd53ad368751</a></p>
-    </div>
 </footer>
 
+
+        <script src='/training-material/assets/js/bundle.9d052497.js?v=1700124870'></script>
         
-        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-        <script type="text/javascript">
-        var snippets=document.querySelectorAll('div.highlight');
-        [].forEach.call(snippets,function(snippet){
-            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-        });
-
-        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-            target:function(trigger){return trigger.nextElementSibling;
-        }});
-        </script>
-        
-
-        <script type="text/javascript">
-            if(window.location.hostname === "galaxyproject.github.io") {
-                // Redirect
-                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-                window.setTimeout(function(){
-                    window.location.href = redirect;
-                }, 5000)
-
-            }
-        </script>
     </body>
 </html>

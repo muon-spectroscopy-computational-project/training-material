@@ -1,0 +1,103 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.1"
+        },
+        {
+          "@id": "https://about.workflowhub.eu/Workflow-RO-Crate/"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "datePublished": "2023-11-16T08:54:31.355+00:00",
+      "mainEntity": {
+        "@id": "main_workflow.ga"
+      }
+    },
+    {
+      "@id": "main_workflow.ga",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "author": [
+        {
+          "@id": "#5e4579f1-9654-4697-be55-961b0d49082a"
+        },
+        {
+          "@id": "#60ef15e1-ae6f-4d3c-81b9-7cbccb2deb38"
+        },
+        {
+          "@id": "#dd00aaeb-73d7-4459-b136-eb2ad911e49f"
+        },
+        {
+          "@id": "#a7953ed7-9cf4-47ff-9c0f-f3d8554c5d38"
+        },
+        {
+          "@id": "#3eadf721-4870-454d-bc30-63fc50fde66f"
+        }
+      ],
+      "license": {
+        "@id": "https://spdx.org/licenses/GPL-3.0-or-later"
+      },
+      "name": "Genome Assembly Quality Control",
+      "version": 1,
+      "programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy"
+      }
+    },
+    {
+      "@id": "https://spdx.org/licenses/GPL-3.0-or-later",
+      "@type": "CreativeWork",
+      "name": "GPL-3.0-or-later"
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+      "@type": "ComputerLanguage",
+      "identifier": {
+        "@id": "https://galaxyproject.org/"
+      },
+      "name": "Galaxy",
+      "url": {
+        "@id": "https://galaxyproject.org/"
+      },
+      "version": "23.1"
+    },
+    {
+      "@id": "#5e4579f1-9654-4697-be55-961b0d49082a",
+      "@type": "Person",
+      "name": "Erwan Corre"
+    },
+    {
+      "@id": "#60ef15e1-ae6f-4d3c-81b9-7cbccb2deb38",
+      "@type": "Person",
+      "name": "Stéphanie Robin"
+    },
+    {
+      "@id": "#dd00aaeb-73d7-4459-b136-eb2ad911e49f",
+      "@type": "Person",
+      "name": "Anthony Bretaudeau"
+    },
+    {
+      "@id": "#a7953ed7-9cf4-47ff-9c0f-f3d8554c5d38",
+      "@type": "Person",
+      "name": "Alexandre Cormier"
+    },
+    {
+      "@id": "#3eadf721-4870-454d-bc30-63fc50fde66f",
+      "@type": "Person",
+      "name": "Laura Leroi"
+    }
+  ]
+}

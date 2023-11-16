@@ -1,0 +1,95 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.1"
+        },
+        {
+          "@id": "https://about.workflowhub.eu/Workflow-RO-Crate/"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "datePublished": "2023-11-16T08:54:31.443+00:00",
+      "mainEntity": {
+        "@id": "main_workflow.ga"
+      }
+    },
+    {
+      "@id": "main_workflow.ga",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "author": [
+        {
+          "@id": "#b3a1f63a-b46c-45fa-9879-e15e4fed0324"
+        },
+        {
+          "@id": "#09bd5786-cf18-4080-b032-a1c369034f24"
+        },
+        {
+          "@id": "#85404993-6f3a-4ef9-8c73-6ad049e426eb"
+        },
+        {
+          "@id": "#8dbc8dab-c89a-4d74-9b13-6ac8bca22594"
+        }
+      ],
+      "license": {
+        "@id": "https://spdx.org/licenses/GPL-3.0-or-later"
+      },
+      "name": "Genome Assembly using PacBio data",
+      "version": 4,
+      "programmingLanguage": {
+        "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy"
+      }
+    },
+    {
+      "@id": "https://spdx.org/licenses/GPL-3.0-or-later",
+      "@type": "CreativeWork",
+      "name": "GPL-3.0-or-later"
+    },
+    {
+      "@id": "https://w3id.org/workflowhub/workflow-ro-crate#galaxy",
+      "@type": "ComputerLanguage",
+      "identifier": {
+        "@id": "https://galaxyproject.org/"
+      },
+      "name": "Galaxy",
+      "url": {
+        "@id": "https://galaxyproject.org/"
+      },
+      "version": "23.1"
+    },
+    {
+      "@id": "#b3a1f63a-b46c-45fa-9879-e15e4fed0324",
+      "@type": "Person",
+      "name": "Erwan Corre"
+    },
+    {
+      "@id": "#09bd5786-cf18-4080-b032-a1c369034f24",
+      "@type": "Person",
+      "name": "Stéphanie Robin"
+    },
+    {
+      "@id": "#85404993-6f3a-4ef9-8c73-6ad049e426eb",
+      "@type": "Person",
+      "name": "Anthony Bretaudeau"
+    },
+    {
+      "@id": "#8dbc8dab-c89a-4d74-9b13-6ac8bca22594",
+      "@type": "Person",
+      "name": "Alexandre Cormier"
+    }
+  ]
+}
