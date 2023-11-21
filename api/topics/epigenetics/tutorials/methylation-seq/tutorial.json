@@ -69,7 +69,7 @@
       ],
       "name": "Workflow Methylation Seq",
       "test_results": null,
-      "modified": "2023-11-20 00:51:33 +0000"
+      "modified": "2023-11-21 00:51:47 +0000"
     }
   ],
   "api": "https://training.galaxyproject.org/training-material/api/topics/epigenetics/tutorials/methylation-seq/tutorial.json",
