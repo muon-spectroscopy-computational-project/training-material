@@ -19,7 +19,7 @@
     {
       "@id": "./",
       "@type": "Dataset",
-      "datePublished": "2023-11-29T00:51:08.432+00:00",
+      "datePublished": "2023-11-30T00:58:28.980+00:00",
       "mainEntity": {
         "@id": "galaxy-workflow-monocle3_workflow.ga"
       }
