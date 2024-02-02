@@ -536,6 +536,9 @@ elichad:
     email: eli.chadwick@stfc.ac.uk
     orcid: 0000-0002-0035-6475
     joined: 2022-11
+    affiliations:
+      - eurosciencegateway
+      - alc
 
 edmontosaurus:
     name: Edwin den Haas
@@ -1055,6 +1058,11 @@ leandro-liborio:
     name: Leandro Liborio
     email: leandro.liborio@stfc.ac.uk
     joined: 2022-11
+    orcid: 0000-0003-2777-5167
+    affiliations:
+      - eurosciencegateway
+      - psdi
+      - alc
     
 Laura190:
     name: Laura Cooper
@@ -1452,6 +1460,11 @@ patrick-austin:
     name: Patrick Austin
     email: patrick.austin@stfc.ac.uk
     joined: 2022-11
+    orcid: 0000-0002-6279-7823
+    affiliations:
+      - eurosciencegateway
+      - psdi
+      - alc
 
 paulineauffret:
     name: Pauline Auffret

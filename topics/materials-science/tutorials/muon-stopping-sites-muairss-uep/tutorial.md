@@ -26,6 +26,7 @@ contributions:
     - leandro-liborio
   funding:
     - eurosciencegateway
+    - alc
 subtopic: muon-spectroscopy
 priority: 2
 abbreviations:
