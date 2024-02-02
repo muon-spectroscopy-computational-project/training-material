@@ -260,3 +260,27 @@ fnso2019:
         This project ([`AAPFNSO2019OpenMetaPaper-14026`](https://www.ouvrirlascience.fr/submit-your-data-its-published/)) is funded with the support of the national Fund for Open Science programme of the French Minister of Higher Education, Research and Innovation. Their funding has supported development of data/metadata management tools and related tutorial for Ecology and FAIR topics.
         ![French research ministry flag with the text: with the support of the National Fund for Open Science programme of french Minister of Higher Education, Research and Innovation](https://lamy-environnement.com/wp-content/uploads/2023/03/Logo-MESR.png)
         ![FNSO logo](/training-material/shared/images/fnso.png)
+
+psdi:
+    name: Physical Sciences Data Infrastructure
+    short_name: PSDI
+    joined: 2024-02
+    avatar: "/training-material/assets/images/psdi-logo.png"
+    github: false
+    url: https://www.psdi.ac.uk/
+    funder: true
+    funding_id: EP/W032252/1
+    funding_system: ukri
+    funding_statement: |
+        PSDI pilot phase, was funded from the EPSRC Digital Research Infrastructure (DRI) programme, and ran from November 2021 – March 2022, following on from the large infrastructures SoN submitted by our project team.
+        This pilot phase was a rapid scoping exercise, designed to expand on the ambitions of the project from the SoN, to engage broadly with the potential user community to gather and analyse requirements and to develop a plan for future phases.
+        The PSDI initiative has been funded through EPSRC DRI funding (EP/X032701/1 and EP/X032663/1) for its current phase of work. This runs from October 2022 to September 2023.
+
+alc:
+    name: Ada Lovelace Centre
+    short_name: ALC
+    joined: 2024-02
+    avatar: "/training-material/assets/images/alc-logo.png"
+    github: false
+    url: https://adalovelacecentre.ac.uk/
+    funder: true
